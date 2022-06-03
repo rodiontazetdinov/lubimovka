@@ -1,0 +1,8 @@
+.reviews__action{
+  animation: go-left-right 3s infinite alternate;
+}
+
+@keyframes go-left-right {        /* объявляем имя анимации: "go-left-right" */
+  from { width: 100%; }             /* от: left: 0px */
+  to { left: 150%; } /* до: left: 100%-50px */
+}

@@ -1,3 +1,14 @@
 .reviews__card{
   list-style: none;
+  min-width: 718px;
+  max-width: 718px;
+  width: 100%;
+  box-sizing: border-box;
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*justify-content: space-between;*/
+  height: 100%;
+  background-color: #fff;
+  padding: 55px 89px 72px 89px;
 }
+

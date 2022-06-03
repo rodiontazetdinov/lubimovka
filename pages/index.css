@@ -23,4 +23,6 @@
 @import url(../blocks/reviews/__full-screen/reviews__full-screen.css);
 @import url(../blocks/reviews/__read-link/reviews__read-link.css);
 @import url(../blocks/reviews/__read-paragraph/reviews__read-paragraph.css);
+@import url(../blocks/reviews/__min/reviews__min.css);
+@import url(../blocks/reviews/__action/reviews__action.css);
 
