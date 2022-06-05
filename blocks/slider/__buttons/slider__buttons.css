@@ -1,0 +1,8 @@
+.slider__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 140px;
+  padding-right: 24px;
+  box-sizing: border-box;
+}
