@@ -17,6 +17,7 @@
 @import url(../blocks/footer/__link/footer__link.css);
 @import url(../blocks/footer/__partners/footer__partners.css);
 @import url(../blocks/footer/__company/footer__company.css);
+@import url(../blocks/footer/__company-logo/footer__company-logo.css);
 @import url(../blocks/footer/__company-name/footer__company-name.css);
 @import url(../blocks/footer/__company-name/_type/footer__company-name_type_top-margin.css);
 @import url(../blocks/footer/__separation/footer__separation.css);
@@ -26,5 +27,5 @@
 @import url(../blocks/footer/__confidentiality/_type/footer__confidentiality_type_margin.css);
 @import url(../blocks/footer/__design/footer__design.css);
 @import url(../blocks/footer/__author/footer__author.css);
-@import url(../blocks/footer/__author/_type/footer__author_type_left-margin.css);
+@import url(../blocks/footer/__author/_type/footer__author_type_margin.css);
 @import url(../blocks/footer/__author/_type/footer__author_type_size.css);

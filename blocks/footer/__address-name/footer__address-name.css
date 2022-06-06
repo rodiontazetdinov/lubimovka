@@ -4,4 +4,10 @@
   font-size: 20px;
   line-height: 24px;
   letter-spacing: -0.01em;
+  margin: 0 0 8px 0;
+}
+@media screen and (min-width: 1440px) {
+  .footer__address-name {
+    margin-bottom: 16px;
+  }
 }

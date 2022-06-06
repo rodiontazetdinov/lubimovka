@@ -16,3 +16,8 @@
     margin-right: 0;
   }
 }
+@media screen and (min-width: 1440px) {
+  .footer__items:nth-last-of-type(3) {
+    margin-right: 23px;
+  }
+}

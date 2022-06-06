@@ -5,7 +5,18 @@
 @media screen and (min-width: 768px) {
   .footer__container {
     flex-direction: row;
-    min-width: 389px;
-    justify-content: space-between;    
+    flex-basis: 389px;
+    justify-content: space-between;
+    margin: 0 0 10px;
   }
 }
+@media screen and (min-width: 1440px) {
+  .footer__container {
+    margin-bottom: 0;
+  }
+  .footer__container:nth-of-type(1) {
+    margin: 0 0 0 181px;
+  }
+}
+
+

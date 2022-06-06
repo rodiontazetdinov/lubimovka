@@ -3,11 +3,17 @@
   font-size: 16px;
   line-height: 22px;
   opacity: 0.6;
-  margin-bottom: 8px;
   text-decoration: none;
   color: #242424;
 }
 .footer__address-place:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+@media screen and (min-width: 1440px) {
+  .footer__address-place {
+    font-size: 14px;
+    line-height: 17px;
+    opacity: 1;
+  }
 }

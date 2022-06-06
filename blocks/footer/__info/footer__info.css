@@ -12,3 +12,9 @@
     justify-content: space-between;
   }
 }
+@media screen and (min-width: 1440px) {
+  .footer__info {
+    order: 6;
+    width: 100%
+  }
+}

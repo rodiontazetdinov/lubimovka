@@ -5,3 +5,9 @@
   background-repeat: no-repeat;
   margin-left: 3px;
 }
+@media screen and (min-width: 1440px) {
+  .footer__logo {
+    order: 1;
+    margin-left: 0;
+  }
+}

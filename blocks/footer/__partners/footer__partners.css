@@ -9,3 +9,17 @@
   margin-bottom: 0;
   padding: 0;
 }
+@media screen and (min-width: 1440px) {
+  .footer__partners {
+    order: 2;
+    font-size: 14px;
+    line-height: 17px;
+    align-items: center;
+    margin: 0 500px 62px 82px;
+  }
+  .footer__partners::before {
+    content: "Генеральные партнеры";
+    max-width: 145px;
+    text-align: left;
+  }
+}

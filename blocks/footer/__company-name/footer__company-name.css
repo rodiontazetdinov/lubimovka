@@ -5,3 +5,8 @@
   margin-top: 18.29px;
   text-align: center;
 }
+@media screen and (min-width: 1440px) {
+  .footer__company-name {
+    display: none;
+  }
+}
