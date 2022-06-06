@@ -5,8 +5,7 @@ export default function Card (data, templateElement, i) {
   let paragraph = template.querySelector('.reviews__paragraph')
   let link = template.querySelector('.reviews__full-screen')
   let element = template.querySelector('.reviews__card')
-  console.log(i)
-  i !== 0 ? element.classList.add('reviews__min') : ''
+  i !== 0 ? element.classList.add('reviews_inactive') : ''
   element.setAttribute("number", i);
   title.src = data.img
   paragraph.textContent = data.paragraph

@@ -2,5 +2,31 @@
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 30px;
+  gap:30px;
+  right: 0;
+  left: 0;
+  animation: go-left-right 3s;
+  position: relative;
+  transition: right 2s ease;
+}
+
+@keyframes go-left-right {        /* объявляем имя анимации: "go-left-right" */
+  from { }             /* от: left: 0px */
+  to {  } /* до: left: 100%-50px */
+}
+
+.testo{
+  width: 100px;
+  height: 100px;
+  background-color: #990000;
+  animation-name: tesf;
+  animation-duration: 3s;
+}
+@keyframes tesf {
+  from{
+
+  }to{
+  width: 400px;
+  background-color: green;
+     }
 }

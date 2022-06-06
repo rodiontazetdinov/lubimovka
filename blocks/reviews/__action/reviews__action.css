@@ -4,5 +4,5 @@
 
 @keyframes go-left-right {        /* объявляем имя анимации: "go-left-right" */
   from { width: 100%; }             /* от: left: 0px */
-  to { left: 150%; } /* до: left: 100%-50px */
+  to { width: 400px; } /* до: left: 100%-50px */
 }

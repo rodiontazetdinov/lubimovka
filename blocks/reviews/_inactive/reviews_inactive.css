@@ -1,0 +1,6 @@
+.reviews_inactive{
+  transition: all 0.5s ease-in-out;
+  transform: scale(1, .5);
+  opacity: 0.4;
+  transform-origin: top;
+}
