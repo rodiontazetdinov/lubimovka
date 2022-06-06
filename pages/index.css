@@ -2,3 +2,29 @@
 @import url(../vendor/fonts/FormularLight/formular-light.css);
 @import url(../vendor/fonts/NeueMachinaRegular/PPNeueMachina-Regular.css);
 @import url(../blocks/page/page.css);
+
+/* footer */
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__logo/footer__logo.css);
+@import url(../blocks/footer/__address-name/footer__address-name.css);
+@import url(../blocks/footer/__address-place/footer__address-place.css);
+@import url(../blocks/footer/__address/footer__address.css);
+@import url(../blocks/footer/__navigation/footer__navigation.css);
+@import url(../blocks/footer/__lists/footer__lists.css);
+@import url(../blocks/footer/__items/footer__items.css);
+@import url(../blocks/footer/__list/footer__list.css);
+@import url(../blocks/footer/__item/footer__item.css);
+@import url(../blocks/footer/__link/footer__link.css);
+@import url(../blocks/footer/__partners/footer__partners.css);
+@import url(../blocks/footer/__company/footer__company.css);
+@import url(../blocks/footer/__company-name/footer__company-name.css);
+@import url(../blocks/footer/__company-name/_type/footer__company-name_type_top-margin.css);
+@import url(../blocks/footer/__separation/footer__separation.css);
+@import url(../blocks/footer/__info/footer__info.css);
+@import url(../blocks/footer/__container/footer__container.css);
+@import url(../blocks/footer/__confidentiality/footer__confidentiality.css);
+@import url(../blocks/footer/__confidentiality/_type/footer__confidentiality_type_margin.css);
+@import url(../blocks/footer/__design/footer__design.css);
+@import url(../blocks/footer/__author/footer__author.css);
+@import url(../blocks/footer/__author/_type/footer__author_type_left-margin.css);
+@import url(../blocks/footer/__author/_type/footer__author_type_size.css);

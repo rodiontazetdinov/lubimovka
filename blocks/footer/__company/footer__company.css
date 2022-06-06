@@ -1,0 +1,9 @@
+.footer__company {
+  width: 182.52px;
+  height: 118.5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}

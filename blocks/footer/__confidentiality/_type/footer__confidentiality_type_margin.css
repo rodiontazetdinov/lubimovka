@@ -1,0 +1,9 @@
+.footer__confidentiality_type_margin {
+  margin-top: 10px;
+}
+@media screen and (min-width: 768px) {
+  .footer__confidentiality_type_margin {
+    margin-top: 0;
+    margin-right: 6px;
+  }
+}

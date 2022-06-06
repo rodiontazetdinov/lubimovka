@@ -1,0 +1,14 @@
+.footer__info {
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .footer__info {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

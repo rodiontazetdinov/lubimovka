@@ -1,0 +1,15 @@
+.footer {
+  font-family: "FormularLight";
+  padding: 156px 0 0 55px;
+  display: flex;
+  flex-direction: column;
+  min-height: 1526px;
+  box-sizing: border-box;
+  color: #242424;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 181px 0 0 32px;
+    min-height: 631px;
+  }
+}

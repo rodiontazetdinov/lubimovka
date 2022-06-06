@@ -1,0 +1,18 @@
+/* отступ для последнего списка от верха. !для мобильной версии!  */
+.footer__items:nth-last-of-type(1) {
+  margin-top: 53px;
+}
+/* отступ для второго списка от правого края  */
+.footer__items:nth-last-of-type(2) {
+  margin-right: 81px;
+}
+@media screen and (min-width: 608px) {
+  /* отступ для последнего списка от верха. !для мобильной версии!  */
+  .footer__items:nth-last-of-type(1) {
+    margin-top: 0;
+  }
+  /* отступ для второго списка от правого края  */
+  .footer__items:nth-last-of-type(2) {
+    margin-right: 0;
+  }
+}
