@@ -6,3 +6,7 @@
   height: 8px;
   background-color: #242424;
 }
+
+.slider__page-dot_active:hover {
+  background-color: #242424;
+}
