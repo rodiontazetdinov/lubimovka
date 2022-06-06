@@ -7,3 +7,8 @@
   background-color: transparent;
   box-sizing:border-box;
 }
+
+
+.slider__button:hover {
+  cursor: pointer;
+}

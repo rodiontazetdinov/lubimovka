@@ -1,3 +1,5 @@
 .slider__list {
-
+  list-style-type: none;
+  padding: 0 27px 100px;
+  margin: 0;
 }
