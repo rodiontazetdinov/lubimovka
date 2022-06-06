@@ -8,8 +8,13 @@
   color: #242424;
   margin: 0;
   padding: 0;
-  max-width: 214px;
   padding-left: 24px;
   position: relative;
   bottom: 4px;
+}
+
+@media screen and (min-width: 433px) {
+  .slider__title {
+    line-height: 56px;
+  }
 }

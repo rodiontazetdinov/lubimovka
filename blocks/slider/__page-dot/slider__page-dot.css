@@ -1,3 +1,10 @@
-.slider__page-dots {
-
+.slider__page-dot {
+  width: 6px;
+  height: 6px;
+  margin: 0;
+  padding: 0;
+  border: solid 1px #242424;
+  border-radius: 50%;
+  background-color: transparent;
+  box-sizing:border-box;
 }

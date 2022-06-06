@@ -11,5 +11,6 @@
 @import url(../blocks/slider/__content/slider__content.css);
 @import url(../blocks/slider/__page-dots/slider__page-dots.css);
 @import url(../blocks/slider/__page-dot/slider__page-dot.css);
+@import url(../blocks/slider/__page-dot/_active/slider__page-dot_active.css);
 @import url(../blocks/slider/__list/slider__list.css);
 @import url(../blocks/slider/__item/slider__item.css);
