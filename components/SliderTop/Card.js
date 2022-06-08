@@ -10,5 +10,6 @@ export default function Card (data, templateElement, i) {
   title.src = data.img
   paragraph.textContent = data.paragraph
   link.src = data.link
+
   return element
 }

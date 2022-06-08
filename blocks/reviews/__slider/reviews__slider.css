@@ -4,10 +4,11 @@
   display: flex;
   gap:30px;
   right: 0;
-  left: 0;
+  /*left: 0;*/
   animation: go-left-right 3s;
   position: relative;
   transition: right 2s ease;
+  width: max-content;
 }
 
 @keyframes go-left-right {        /* объявляем имя анимации: "go-left-right" */
@@ -15,18 +16,3 @@
   to {  } /* до: left: 100%-50px */
 }
 
-.testo{
-  width: 100px;
-  height: 100px;
-  background-color: #990000;
-  animation-name: tesf;
-  animation-duration: 3s;
-}
-@keyframes tesf {
-  from{
-
-  }to{
-  width: 400px;
-  background-color: green;
-     }
-}
