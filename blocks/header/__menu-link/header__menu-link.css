@@ -1,0 +1,12 @@
+.header__menu-link {
+  display: inline-block;
+  padding: 8px 0;
+  font-family: 'Neue Machina';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  color:var(--black);
+}

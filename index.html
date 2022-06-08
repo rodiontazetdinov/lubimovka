@@ -11,13 +11,14 @@
   <!-- HEADER -->
   <header class="header">
     <div class="header__container">
-
-      <img src="./img/header-logo.svg" alt="Логотип проекта Любимовка" class="header__logo">
-      <button type="button" class="header__burger burger">
+      <a href="#" class="header__logo-link">
+        <img src="./img/header-logo.svg" alt="Логотип проекта Любимовка" class="header__logo header__logo_opened-menu">
+      </a>
+      <button type="button" class="header__burger burger burger_close">
         <span class="burger__line"></span>
       </button>
 
-      <div class="header__menu">
+      <div class="header__menu-wrapper">
         <nav class="header__navigation">
           <ul class="header__menu">
             <li class="header__menu-item"><a href="#" class="header__menu-link">Главная</a></li>
@@ -37,10 +38,12 @@
           <a href="#" class="header__link">
             <span class="header__link-text">подать пьесу</span>
             <span class="header__link-icon"></span>
+            <span class="header__link-bg"></span>
           </a>
           <a href="#" class="header__link">
             <span class="header__link-text">поддержать</span>
             <span class="header__link-icon header__link-icon_changed"></span>
+            <span class="header__link-bg"></span>
           </a>
         </div>
 
@@ -62,7 +65,6 @@
           </li>
         </ul>
       </div>
-
     </div>
   </header>
 </body>

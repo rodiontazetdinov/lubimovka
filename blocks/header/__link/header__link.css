@@ -1,0 +1,36 @@
+.header__link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px 16px 24px;
+  box-sizing: border-box;
+  border: 1px solid var(--black);
+  border-right: none;
+  font-family: 'FormularLight';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--black);
+  background-color: transparent;
+  transition: all 0.5s ease-out;
+}
+
+.header__link:not(:first-of-type) {
+  border-top: none;
+}
+
+.header__link:hover {
+  color: var(--white);
+}
+
+.header__link:hover .header__link-icon {
+  background-image: url(../../../img/icon_arrow-right_white.svg);
+}
+
+.header__link:hover .header__link-bg {
+  width: 100%;
+}

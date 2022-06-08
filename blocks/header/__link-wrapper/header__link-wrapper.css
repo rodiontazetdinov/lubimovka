@@ -1,0 +1,5 @@
+.header__link-wrapper {
+  padding: 57px 0 0 32px;
+  display: flex;
+  flex-direction: column;
+}

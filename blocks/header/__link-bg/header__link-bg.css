@@ -1,0 +1,9 @@
+.header__link-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 56px;
+  background-color: var(--black);
+  transition: width 0.7s ease-out;
+}

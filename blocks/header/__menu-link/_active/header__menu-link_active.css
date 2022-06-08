@@ -1,0 +1,26 @@
+.header__menu-link_active {
+  position: relative;
+}
+
+.header__menu-link_active::before,
+.header__menu-link_active::after {
+  content: "";
+  width: 16px;
+  height: 41px;
+  position: absolute;
+  background-size: 16px 41px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header__menu-link_active::before {
+  top: 5px;
+  left: -16px;
+  background-image: url(../../../../img/icon_ellipse-left.svg);
+}
+
+.header__menu-link_active::after {
+  top: 6px;
+  right: -16px;
+  background-image: url(../../../../img/icon_ellipse-right.svg);
+}

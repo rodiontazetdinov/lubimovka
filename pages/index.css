@@ -3,3 +3,25 @@
 @import url(../vendor/fonts/NeueMachinaRegular/PPNeueMachina-Regular.css);
 @import url(../variables/variables.css);
 @import url(../blocks/page/page.css);
+
+/*HEADER*/
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__container/header__container.css);
+@import url(../blocks/header/__logo/header__logo.css);
+@import url(../blocks/header/__logo/_opened-menu/header__logo_opened-menu.css);
+@import url(../blocks/header/__burger/header__burger.css);
+@import url(../blocks/burger/burger.css);
+@import url(../blocks/burger/_close/burger_close.css);
+@import url(../blocks/burger/__line/burger__line.css);
+
+@import url(../blocks/header/__menu/header__menu.css);
+@import url(../blocks/header/__menu-link/header__menu-link.css);
+@import url(../blocks/header/__menu-link/_active/header__menu-link_active.css);
+
+@import url(../blocks/header/__link-wrapper/header__link-wrapper.css);
+@import url(../blocks/header/__link/header__link.css);
+@import url(../blocks/header/__link-text/header__link-text.css);
+@import url(../blocks/header/__link-icon/header__link-icon.css);
+@import url(../blocks/header/__link-bg/header__link-bg.css);
+
+@import url(../blocks/header/__social/header__social.css);
