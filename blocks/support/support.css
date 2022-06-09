@@ -1,0 +1,108 @@
+@import url(../../vendor/normalize.css);
+@import url(../../vendor/fonts/FormularLight/formular-light.css);
+@import url(../../vendor/fonts/NeueMachinaRegular/PPNeueMachina-Regular.css);
+@import url(../../variables/variables.css);
+
+.page {
+  width: 100%;
+  background-color: #ECEBE8;
+  font-family: FormularLight, serif;
+
+}
+
+.page__container {
+  max-width: 1440px;
+}
+
+
+.content {
+}
+.transfer-donation {
+}
+.transfer-donation__text-wrapper {
+}
+.transfer-donation__title {
+  width: 629px;
+  font-family: 'Neue Machina';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -0.01em;
+  color: #242424;
+}
+
+.transfer-donation__paragraph {
+  width: 537px;
+  font-family: 'Neue Machina';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+  /* or 114% */
+  letter-spacing: -0.01em;
+  color: #242424;
+}
+
+.transfer-donation__note {
+  width: 345px;
+  font-family: 'Formular';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 23px;
+  /* or 128% */
+  font-feature-settings: 'ss01' on;
+  color: #242424;
+}
+
+.transfer-donation__form {
+  width: 600px;
+  height: 630px;
+  background: #FFFFFF;
+}
+
+.about-donations {
+}
+
+.about-donations__picture {
+  max-width: 780px;
+  max-height: 300px;
+}
+
+.about-donations__title {
+  width: 410px;
+  font-family: 'Neue Machina';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  /* or 100% */
+  letter-spacing: -0.01em;
+  color: #242424;
+}
+
+.about-donations__paragraph {
+  width: 237px;
+  font-family: 'Neue Machina';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  /* or 120% */
+  letter-spacing: -0.01em;
+  color: #242424;
+}
+.accounting {
+}
+.accounting__title {
+  width: 873px;
+  font-family: 'Neue Machina';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 38px;
+  /* or 106% */
+  letter-spacing: -0.01em;
+  color: #242424;
+}
