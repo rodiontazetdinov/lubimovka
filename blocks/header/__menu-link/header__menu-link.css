@@ -10,3 +10,13 @@
   text-decoration: none;
   color:var(--black);
 }
+
+@media screen and (min-width: 1440px) {
+  .header__menu-link {
+    font-family: 'FormularLight';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}

@@ -5,3 +5,12 @@
   background-image: url(../../../img/icon_arrow-right.svg);
   z-index: 1;
 }
+
+@media screen and (min-width: 1440px) {
+  .header__link-icon {
+    order: -1;
+    width: 25px;
+    height: 25px;
+    background-image: none;
+  }
+}

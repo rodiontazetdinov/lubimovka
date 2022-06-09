@@ -1,0 +1,9 @@
+@media screen and (min-width: 1440px) {
+  .header__link-icon_changed {
+    order: -1;
+    width: 25px;
+    height: 25px;
+    background-image: url(../../../../img/icon_plus.svg);
+    transition: all 0.5s ease-out;
+  }
+}

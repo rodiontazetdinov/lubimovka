@@ -1,9 +1,5 @@
-.header__info {
-  padding: 32px 0 0 24px;
-}
-
 @media screen and (min-width: 1440px) {
-  .header__info {
+  .header__menu-link_hidden {
     display: none;
   }
 }

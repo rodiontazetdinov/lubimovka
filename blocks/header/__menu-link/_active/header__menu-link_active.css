@@ -20,7 +20,28 @@
 }
 
 .header__menu-link_active::after {
-  top: 6px;
+  top: 5px;
   right: -16px;
   background-image: url(../../../../img/icon_ellipse-right.svg);
+}
+
+@media screen and (min-width: 1440px) {
+  .header__menu-link_active::before,
+  .header__menu-link_active::after {
+    width: 10px;
+    height: 24px;
+    background-size: 10px 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .header__menu-link_active::before {
+    top: 7px;
+    left: -10px;
+  }
+
+  .header__menu-link_active::after {
+    top: 7px;
+    right: -10px;
+  }
 }

@@ -34,3 +34,21 @@
 .header__link:hover .header__link-bg {
   width: 100%;
 }
+
+@media screen and (min-width: 1440px) {
+  .header__link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 7px 20px 7px 17px;
+    border: none;
+  }
+
+  .header__link:hover .header__link-icon {
+    background-image: none;
+  }
+
+  .header__link:hover .header__link-icon_changed {
+    background-image: url(../../../img/icon_plus-white.svg);
+  }
+}

@@ -3,3 +3,11 @@
   margin: 0;
   padding: 30px 0 0 56px;
 }
+
+@media screen and (min-width: 1440px) {
+  .header__menu {
+    display: flex;
+    gap: 44px;
+    padding: 0;
+  }
+}

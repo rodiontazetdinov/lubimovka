@@ -7,3 +7,9 @@
   background-color: var(--black);
   transition: width 0.7s ease-out;
 }
+
+@media screen and (min-width: 1440px) {
+  .header__link-bg {
+    height: 39px;
+  }
+}
