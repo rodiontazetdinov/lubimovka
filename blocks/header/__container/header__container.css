@@ -2,12 +2,12 @@
   position: relative;
   width: 100%;
   max-width: 1440px;
-  padding: 32px 0 0 24px;
+  padding: 32px 0 13px 0;
+  box-sizing: border-box;
 }
 
 @media screen and (min-width: 1440px) {
   .header__container {
-    padding: 15px 0 11px 30px;
     border-bottom: 1px solid var(--black);
   }
 }

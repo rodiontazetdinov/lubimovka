@@ -1,0 +1,27 @@
+.header__social-link {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px 18px 14px;
+  font-family: 'FormularLight';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  text-decoration: none;
+  color: var(--black);
+  transition: all 0.5s ease-out;
+}
+
+.header__social-link:hover {
+  color: var(--white);
+}
+
+.header__social-link:hover .header__link-icon {
+  background-image: url(../../../img/icon_arrow-right_white.svg);
+}
+
+.header__social-link:hover .header__link-bg {
+  width: 100%;
+}

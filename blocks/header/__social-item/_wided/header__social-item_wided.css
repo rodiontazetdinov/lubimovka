@@ -1,0 +1,8 @@
+.header__social-item_wided {
+  width: 100%;
+  border-top: 1px solid var(--black);
+}
+
+.header__social-item_wided .header__social-link {
+  padding: 16px 20px 18px 28px;
+}

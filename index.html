@@ -7,14 +7,14 @@
     <title>lyubimovka</title>
     <link rel="stylesheet" href="./pages/index.css">
 </head>
-<body class="page">
+<body class="page page_temp">
   <!-- HEADER -->
   <header class="header">
     <div class="header__container">
       <a href="#" class="header__logo-link">
-        <img src="./img/header-logo.svg" alt="Логотип проекта Любимовка" class="header__logo header__logo_opened-menu">
+        <img src="./img/header-logo.svg" alt="Логотип проекта Любимовка" class="header__logo">
       </a>
-      <button type="button" class="header__burger burger burger_close">
+      <button type="button" class="header__burger burger">
         <span class="burger__line"></span>
       </button>
 
@@ -48,22 +48,58 @@
         </div>
 
         <ul class="header__social">
-          <li class="header__social-item">
-            <a href="#" class="header__social-link" target="_blank">ytube</a>
+          <li class="header__social-item header__social-item_wided">
+            <a href="#" class="header__social-link" target="_blank">
+              <span class="header__link-text">ytube</span>
+              <span class="header__link-icon"></span>
+              <span class="header__link-bg"></span>
+            </a>
           </li>
           <li class="header__social-item">
-            <a href="#" class="header__social-link" target="_blank">fb</a>
+            <a href="#" class="header__social-link" target="_blank">
+              <span class="header__link-text">fb</span>
+              <span class="header__link-icon"></span>
+              <span class="header__link-bg"></span>
+            </a>
           </li>
           <li class="header__social-item">
-            <a href="#" class="header__social-link" target="_blank">inst</a>
+            <a href="#" class="header__social-link" target="_blank">
+              <span class="header__link-text">inst</span>
+              <span class="header__link-icon"></span>
+              <span class="header__link-bg"></span>
+            </a>
           </li>
           <li class="header__social-item">
-            <a href="#" class="header__social-link" target="_blank">vk</a>
+            <a href="#" class="header__social-link" target="_blank">
+              <span class="header__link-text">vk</span>
+              <span class="header__link-icon"></span>
+              <span class="header__link-bg"></span>
+            </a>
           </li>
           <li class="header__social-item">
-            <a href="#" class="header__social-link" target="_blank">tlgrm</a>
+            <a href="#" class="header__social-link" target="_blank">
+              <span class="header__link-text">tlgrm</span>
+              <span class="header__link-icon"></span>
+              <span class="header__link-bg"></span>
+            </a>
           </li>
         </ul>
+
+        <div class="header__info">
+          <p class="header__info-text">&copy;&nbsp;Любимовка,&nbsp;2021</p>
+          <p class="header__info-text">
+            <a href="#" class="header__info-link">Политика конфиденциальности</a>
+          </p>
+          <div class="header__designers">
+            <img src="./img/logo-shishki.svg" alt="Логотип shishki.collective" class="header__logo-shishki">
+            <p class="header__info-text">дизайн сайта&nbsp;—
+              <a href="https://ru.shishki.co/" class="header__info-link" target="_blank">shishki.collective</a>
+            </p>
+          </div>
+          <p class="header__info-text">вёрстка и разработака&nbsp;—&nbsp;студенты
+            <a href="https://practicum.yandex.ru/" class="header__info-link" target="_blank">Яндекс.Практикума</a>
+          </p>
+        </div>
       </div>
     </div>
   </header>

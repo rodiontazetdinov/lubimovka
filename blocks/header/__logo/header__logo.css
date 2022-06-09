@@ -1,7 +1,8 @@
 .header__logo {
   width: 43px;
   height: 34px;
-  display: block;
+  margin-left: 24px;
+  display: inline-block;
   transition: all 0.3s ease-out;
 }
 
