@@ -9,7 +9,8 @@
 @media screen and (min-width: 1440px) {
   .header__container {
     display: flex;
-    padding: 15px 0 11px 0;
+    align-items: end;
+    padding: 10px 0 11px 0;
     border-bottom: 1px solid var(--black);
   }
 }

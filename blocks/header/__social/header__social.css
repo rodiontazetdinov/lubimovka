@@ -5,3 +5,34 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+@media screen and (min-width: 1440px) {
+  .header__social {
+    position: relative;
+    padding: 0 22px 0 24px;
+    margin-left: auto;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .header__social::before {
+    content: "";
+    width: 1px;
+    height: 51px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--black);
+  }
+
+  .header__social::after {
+    content: "";
+    width: 1px;
+    height: 51px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--black);
+  }
+}

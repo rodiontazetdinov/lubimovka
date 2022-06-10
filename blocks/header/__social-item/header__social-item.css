@@ -8,3 +8,14 @@
 .header__social-item:nth-child(even) {
   border-right: 1px solid var(--black);
 }
+
+@media screen and (min-width: 1440px) {
+  .header__social-item {
+    width: auto;
+    border: none;
+  }
+
+  .header__social-item:nth-child(even) {
+    border-right: none;
+  }
+}

@@ -8,5 +8,6 @@
   .header__link-wrapper {
     padding: 0;
     flex-direction: row;
+    order: 1;
   }
 }

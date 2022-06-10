@@ -6,3 +6,14 @@
 .header__social-item_wided .header__social-link {
   padding: 16px 20px 18px 28px;
 }
+
+@media screen and (min-width: 1440px) {
+  .header__social-item_wided {
+    width: auto;
+    border-top: none;
+  }
+
+  .header__social-item_wided .header__social-link {
+    padding: 0;
+  }
+}
