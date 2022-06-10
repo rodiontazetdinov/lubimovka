@@ -1,0 +1,4 @@
+.slider__item_is-visible {
+  display: block;
+  visibility: visible;
+}

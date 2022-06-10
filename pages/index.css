@@ -16,5 +16,6 @@
 @import url(../blocks/slider/__page-dot/_active/slider__page-dot_active.css);
 @import url(../blocks/slider/__list/slider__list.css);
 @import url(../blocks/slider/__item/slider__item.css);
+@import url(../blocks/slider/__item/_is-visible/slider__item_is-visible.css);
 @import url(../blocks/slider/__text/slider__text.css);
 @import url(../blocks/slider/__signature/slider__signature.css);

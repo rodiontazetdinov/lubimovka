@@ -1,3 +1,4 @@
 .slider__content {
-  background: #fff;
+  /* background: #fff; */
+  overflow: hidden;
 }
