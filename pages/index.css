@@ -30,7 +30,6 @@
 @import url(../blocks/header/__link-text/header__link-text.css);
 @import url(../blocks/header/__link-icon/header__link-icon.css);
 @import url(../blocks/header/__link-icon/_changed/header__link-icon_changed.css);
-@import url(../blocks/header/__link-bg/header__link-bg.css);
 
 @import url(../blocks/header/__social/header__social.css);
 @import url(../blocks/header/__social-item/header__social-item.css);

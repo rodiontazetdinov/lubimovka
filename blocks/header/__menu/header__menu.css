@@ -7,7 +7,9 @@
 @media screen and (min-width: 1440px) {
   .header__menu {
     display: flex;
-    gap: 44px;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 44px;
     padding: 0;
   }
 }
