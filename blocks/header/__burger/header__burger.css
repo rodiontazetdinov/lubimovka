@@ -1,5 +1,5 @@
 .header__burger {
-  position: absolute;
+  position: fixed;
   top: 10px;
   right: 0;
 }
