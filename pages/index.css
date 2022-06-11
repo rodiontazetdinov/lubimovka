@@ -17,6 +17,7 @@
 
 @import url(../blocks/header/__menu-wrapper/header__menu-wrapper.css);
 @import url(../blocks/header/__menu-wrapper/_visible/header__menu-wrapper_visible.css);
+@import url(../blocks/header/__navigation/header__navigation.css);
 @import url(../blocks/header/__menu/header__menu.css);
 @import url(../blocks/header/__menu-link/header__menu-link.css);
 @import url(../blocks/header/__menu-link/_hidden/header__menu-link_hidden.css);
