@@ -2,3 +2,5 @@
 @import url(../vendor/fonts/FormularLight/formular-light.css);
 @import url(../vendor/fonts/NeueMachinaRegular/PPNeueMachina-Regular.css);
 @import url(../blocks/page/page.css);
+@import url(../blocks/projects/projects.css);
+@import url(../blocks/projects/__button/projects__button.css);
