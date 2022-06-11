@@ -1,4 +1,5 @@
 .header__menu-link {
+  position: relative;
   display: inline-block;
   padding: 8px 0;
   font-family: 'Neue Machina';
@@ -11,6 +12,36 @@
   color:var(--black);
 }
 
+.header__menu-link.header__menu-link::before,
+.header__menu-link.header__menu-link::after {
+  content: "";
+  width: 16px;
+  height: 41px;
+  position: absolute;
+  background-size: 16px 41px;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+
+.header__menu-link.header__menu-link::before {
+  top: 5px;
+  left: -16px;
+  background-image: url(../../../../img/icon_ellipse-left.svg);
+}
+
+.header__menu-link.header__menu-link::after {
+  top: 5px;
+  right: -16px;
+  background-image: url(../../../../img/icon_ellipse-right.svg);
+}
+
+.header__menu-link:hover.header__menu-link::before,
+.header__menu-link:hover.header__menu-link::after {
+  opacity: 1;
+}
+
 @media screen and (min-width: 1440px) {
   .header__menu-link {
     font-family: 'FormularLight';
@@ -18,5 +49,22 @@
     font-weight: 300;
     font-size: 16px;
     line-height: 22px;
+  }
+
+  .header__menu-link.header__menu-link::before,
+  .header__menu-link.header__menu-link::after {
+    width: 10px;
+    height: 24px;
+    background-size: 10px 24px;
+  }
+
+  .header__menu-link.header__menu-link::before {
+    top: 7px;
+    left: -10px;
+  }
+
+  .header__menu-link.header__menu-link::after {
+    top: 7px;
+    right: -10px;
   }
 }
