@@ -1,5 +1,16 @@
 .slider__header {
-  display: flex;
+  display: grid;
   justify-content: space-between;
-  padding-bottom: 24px;
+  /* padding-bottom: 24px; */
+  grid-template-columns: minmax(127px, 341px) 170px;
+  grid-template-rows: repeat(auto, 60px);
+
 }
+
+@media screen and (min-width: 433px) {
+  .slider__header {
+    /* grid-template-columns: 214px min-content min-content; */
+    /* gap: 30px; */
+  }
+}
+

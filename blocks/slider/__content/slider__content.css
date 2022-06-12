@@ -1,4 +1,6 @@
 .slider__content {
   /* background: #fff; */
   overflow: hidden;
+  position: relative;
+  bottom: 46px;
 }
