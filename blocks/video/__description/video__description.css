@@ -2,6 +2,13 @@
   margin-bottom: 100px;
 }
 
+@media screen and (min-width: 768px) {
+  .video__description {
+    width: 87.25%;
+    margin-bottom: 80px;
+  }
+}
+
 @media screen and (min-width: 1440px) {
   .video__description {
     width: 87.25%;

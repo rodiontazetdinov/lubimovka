@@ -8,6 +8,12 @@
   letter-spacing: -0.01em;
 }
 
+@media screen and (min-width: 768px) {
+  .reading__title {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 1440px) {
   .reading__title {
     display: none;

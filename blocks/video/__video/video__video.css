@@ -9,6 +9,13 @@
   background-size: cover;
 }
 
+@media screen and (min-width: 768px) {
+  .video__video {
+    height: calc((50vw - 36px) * 0.56);
+    margin-bottom: 66px;
+  }
+}
+
 @media screen and (min-width: 1440px) {
   .video__video {
     height: 389px;

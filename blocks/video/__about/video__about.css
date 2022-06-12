@@ -7,6 +7,15 @@
   box-sizing: border-box;
 }
 
+@media screen and (min-width: 768px) {
+  .video__about {
+    width: 50%;
+    flex-shrink: 0;
+    padding: 0 36px 0 72px;
+    background-color: var(--background);
+  }
+}
+
 @media screen and (min-width: 1440px) {
   .video__about {
     width: 50%;
