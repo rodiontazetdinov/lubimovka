@@ -1,0 +1,9 @@
+.play__text {
+    padding: 0;
+    margin: 56px auto 0 auto;
+    max-width: 280px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    font-style: normal;
+}

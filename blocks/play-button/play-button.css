@@ -1,9 +1,7 @@
 .play-button {
     display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
     padding: 0;
-    margin: 30px 213px 0 86px;
-    background-color: transparent;
-    border: 1px solid #242424;
-    border-left: transparent;
-    border-top: transparent;
 }

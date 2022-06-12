@@ -1,4 +1,5 @@
 .play-button__img {
   padding: 0;
-  margin:auto 0 auto 4px;
+  margin: 0;
+  align-self: center;
 }

@@ -1,0 +1,11 @@
+.play-button_type-project {
+    margin: 30px 213px 0 86px;
+    padding: 9px 0 9px 10px;
+    width: 115px;
+    height: 32px;
+    background-color: transparent;
+    border: 1px solid #242424;
+    border-left: transparent;
+    border-top: transparent;
+    line-height: 14px;
+}
