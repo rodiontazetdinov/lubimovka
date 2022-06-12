@@ -1,4 +1,6 @@
 .slider__item_is-visible {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   visibility: visible;
 }

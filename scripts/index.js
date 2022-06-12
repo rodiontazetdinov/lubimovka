@@ -7,6 +7,26 @@ const body = document.querySelector('.page'),
       sliderList = slider.querySelector('.slider__list'),
       sliderItems = Array.from(sliderList.querySelectorAll('.slider__item'));
 
+const slide = document.querySelector('#slide');
+
+function createSlide(author, text) {
+  const element = slide.content.querySelector('.slider__item').cloneNode(true);
+  element.querySelector('.slider__signature').textContent = author;
+  element.querySelector('.slider__text').textContent = text;
+  element.classList.add('slider__item_is-visible');
+
+  return element;
+}
+
+function fillSlideList() {
+    sliderConfig.slidesWindow.forEach(item => {
+      const element = createSlide(sliderConfig.slides[item].author, sliderConfig.slides[item].text);
+      console.log(item.author);
+      console.log(item.text);
+      sliderList.append(element);
+    });
+}
+
 // тут создаётся начальное кол-во слайдов
 let slidesCount = Math.floor(window.innerWidth / 420);
 let slidesWindow = []; // сюда положим индексы от нуля до размера окна
@@ -61,12 +81,10 @@ window.addEventListener('resize',(evt) => {
 // window.addEventListener('resize',(evt) => {  //показывает сколько сейчас слайдов помещается
 //   console.log(sliderConfig.slidesCount);
 // });
-console.log(sliderConfig.slidesCount);
+
 fillStartWindow();
+fillSlideList();
 
-console.log(sliderConfig.slidesWindow);
-
-const sliderCounter = 0;
 
 //обработчики
 
