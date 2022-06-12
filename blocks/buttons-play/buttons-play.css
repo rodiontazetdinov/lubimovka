@@ -1,0 +1,14 @@
+.buttons-play {
+    display: flex;
+    flex-direction:row;
+    justify-self:center;
+    min-width: 115px;
+    min-height: 32px;
+    padding: 0;
+    margin: 30px 213px 0 86px;
+    background-color: transparent;
+    border: 1px solid #242424;
+    border-left: transparent;
+    border-top: transparent;
+    font-family: FormularLight, serif;
+}
