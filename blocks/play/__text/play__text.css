@@ -1,9 +1,15 @@
 .play__text {
     padding: 0;
     margin: 56px auto 0 auto;
-    max-width: 280px;
+    max-width: 87.5%;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
     font-style: normal;
+}
+
+@media (min-width: 321px) and (max-width: 1440px) {
+  .play__text {
+    grid-area: play__text;
+  }
 }

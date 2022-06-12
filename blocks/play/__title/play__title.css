@@ -7,3 +7,10 @@
   font-family: 'Neue Machina';
   line-height: 40px;
 }
+
+@media (min-width: 321px) and (max-width: 1440px) {
+  .play__title {
+    grid-area: play__title;
+
+  }
+}

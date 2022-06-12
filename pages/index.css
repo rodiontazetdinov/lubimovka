@@ -9,7 +9,7 @@
 @import url(../blocks/play-button/_type-ticket/play-button_type-ticket.css);
 @import url(../blocks/play/play.css);
 @import url(../blocks/play/__title/play__title.css);
-@import url(../blocks/play/__play-about/play-about.css);
+@import url(../blocks/play/__about/play__about.css);
 @import url(../blocks/play/__schedule/play__sсhedule.css);
 @import url(../blocks/play/__image/play__image.css);
 @import url(../blocks/play/__text/play__text.css);

@@ -1,9 +1,16 @@
 .play-button_type-ticket {
-    margin: 16px auto 0 auto;
+    margin: 16px auto 0 40px;
     padding: 16px 20px 16px 16px;
     width: 240px;
     height: 56px;
     background-color: transparent;
     border: 1px solid #242424;
     line-height: 22px;
+}
+
+@media (min-width: 321px) and (max-width: 1440px) {
+  .play-button_type-ticket {
+    grid-area: play-button_type-ticket;
+
+  }
 }
