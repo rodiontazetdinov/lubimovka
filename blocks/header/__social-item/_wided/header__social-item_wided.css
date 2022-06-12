@@ -1,0 +1,11 @@
+.header__social-item_wided {
+  width: 100%;
+  border-top: 1px solid var(--black);
+}
+
+@media screen and (min-width: 1440px) {
+  .header__social-item_wided {
+    width: auto;
+    border-top: none;
+  }
+}

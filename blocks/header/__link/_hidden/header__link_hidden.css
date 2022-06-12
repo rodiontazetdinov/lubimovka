@@ -1,0 +1,5 @@
+@media screen and (min-width: 1440px) {
+  .header__link_hidden {
+    display: none;
+  }
+}
