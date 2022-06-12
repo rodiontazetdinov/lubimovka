@@ -1,16 +1,22 @@
 .play__title {
   padding: 0;
   margin: 58px 67px 0 24px;
-  max-width: 323px;
+  min-width: 323px;
+  max-height: 70px;
   font-weight: 400;
   font-size: 40px;
-  font-family: 'Neue Machina';
   line-height: 40px;
+  font-family: 'Neue Machina';
 }
 
-@media (min-width: 321px) and (max-width: 1440px) {
+@media (min-width: 415px) and (max-width: 1440px) {
   .play__title {
     grid-area: play__title;
-
+    min-width: 540px;
+    font-size: 70px;
+    line-height: 72px;
+    margin-top: 92px;
+    margin-left: 120px;
+    margin-right: auto;
   }
 }

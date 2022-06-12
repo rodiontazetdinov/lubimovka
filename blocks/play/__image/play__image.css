@@ -1,17 +1,23 @@
 .play__image {
     padding: 0;
     margin: 38px auto 0 auto;
-    width: 100%;
+    max-width: 100%;
 }
 
-@media (min-width: 321px) and (max-width: 720px) {
+@media (min-width: 415px) and (max-width: 768px) {
   .play__image {
-    max-width: 720px;
+     max-width: 80%;
+     margin-left: 5%;
+     margin-right: 5%;
   }
 }
 
-@media (min-width: 321px) and (max-width: 1440px) {
+@media (min-width: 768px) and (max-width: 1440px) {
   .play__image {
     grid-area: play__image;
+    margin-top: 95px;
+    width: 720px;
+    height: 614px;
+    object-fit: cover;
   }
 }

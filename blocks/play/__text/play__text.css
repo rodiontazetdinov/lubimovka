@@ -3,13 +3,18 @@
     margin: 56px auto 0 auto;
     max-width: 87.5%;
     font-weight: 400;
+    font-style: normal;
     font-size: 20px;
     line-height: 24px;
-    font-style: normal;
+    font-family: 'Neue Machina';
 }
 
-@media (min-width: 321px) and (max-width: 1440px) {
+@media (min-width: 768px) and (max-width: 1440px) {
   .play__text {
+    font-size: 28px;
+    line-height: 32px;
+    margin-top: 48px;
+    margin-right: 130px;
     grid-area: play__text;
   }
 }

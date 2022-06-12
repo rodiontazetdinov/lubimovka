@@ -10,4 +10,13 @@
     line-height: 14px;
 }
 
+@media (min-width: 768px) and (max-width: 1440px) {
+  .play-button_type-project {
+    margin-top: 33px;
+    margin-right: auto;
+    margin-left: 40px;
+    width: 120px;
+  }
+}
+
 

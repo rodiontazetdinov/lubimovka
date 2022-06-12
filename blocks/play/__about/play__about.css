@@ -1,13 +1,20 @@
 .play__about {
   margin:16px auto 0 40px;
+  max-width: 304px;
   font-weight: 400;
   font-size: 19px;
   line-height: 23px;
   font-family: 'Neue Machina';
 }
 
-@media (min-width: 321px) and (max-width: 1440px) {
+@media (min-width: 768px) and (max-width: 1440px) {
   .play__about {
     grid-area: play__about;
+    margin-top: 37px;
+    margin-left: 180px;
+    max-width: 418px;
+    font-size: 20px;
+    line-height: 24px;
+
   }
 }
