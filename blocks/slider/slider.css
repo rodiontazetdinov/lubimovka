@@ -1,3 +1,19 @@
 .slider {
-
+  max-width: 1320px;
+  margin: 0 auto;
 }
+
+@media screen and (min-width: 450px) {
+  .slider {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+}
+
+@media screen and (min-width: 1370px) {
+  .slider {
+    padding: 0;
+  }
+}
+
+

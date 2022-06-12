@@ -4,4 +4,14 @@
   visibility: hidden;
   width: 100vw;
   display: none;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 880px) {
+  .slider__item {
+    padding-top: 33px;
+    padding-bottom: 24px;
+    min-width: 400px;
+    max-width: 420px;
+  }
 }
