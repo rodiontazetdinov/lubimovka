@@ -8,6 +8,6 @@
 
 @media screen and (min-width: 880px) {
   .slider__list {
-    justify-content:space-evenly;
+    justify-content: space-evenly;
   }
 }
