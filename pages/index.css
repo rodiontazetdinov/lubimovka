@@ -2,6 +2,6 @@
 @import url(../vendor/fonts/FormularLight/formular-light.css);
 @import url(../vendor/fonts/NeueMachinaRegular/PPNeueMachina-Regular.css);
 @import url(../blocks/page/page.css);
-@import url(../blocks/buttons-play/buttons-play.css);
-@import url(../blocks/buttons-play/__text/buttons-play__text.css);
-@import url(../blocks/arrow-img/arrow-img.css);
+@import url(../blocks/play-button/play-button.css);
+@import url(../blocks/play-button/__text/play-button__text.css);
+@import url(../blocks/play-button/__img/play-button__img.css);
