@@ -1,6 +1,7 @@
 .footer__company-logo {
   object-fit: contain;
 }
+/*размеры согласно макета для лого компаний*/
 .footer__company:nth-of-type(1) > .footer__company-logo {
   width: 110px;
   height: 41px;
@@ -9,20 +10,3 @@
     width: 106px;
     height: 37px;
   }
-@media screen and (min-width: 1440px) {
-  .footer__company:nth-of-type(1) > .footer__company-logo {
-    width: 91px;
-    height: 34px;
-  }
-  .footer__company:nth-of-type(2) > .footer__company-logo {
-    width: 88px;
-    height: 31px;
-  }
-  .footer__company:nth-of-type(3) > .footer__company-logo {
-    width: 68px;
-    height: 37px;
-  }
-  .footer__company:nth-of-type(4) > .footer__company-logo {
-    width: 97px;
-  }
-}

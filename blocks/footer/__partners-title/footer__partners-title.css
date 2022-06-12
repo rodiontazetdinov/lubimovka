@@ -1,0 +1,18 @@
+.footer__partners-title {
+  display: none;
+}
+@media screen and (min-width: 1000px) {
+  .footer__partners-title {
+    display: inline;
+    text-align: left;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    width: 97px;
+  }
+}
+@media screen and (min-width: 1190px) {
+  .footer__partners-title {
+    width: 145px;
+  }
+}

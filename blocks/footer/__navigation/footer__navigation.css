@@ -4,12 +4,22 @@
   line-height: 23px;
   margin-bottom: 56px;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 608px) {
+  .footer__navigation {
+    padding-right: 32px;
+  }
+}
+@media screen and (min-width: 1000px) {
   .footer__navigation {
     font-size: 14px;
     line-height: 17px;
-    flex-basis: 545px;
     margin-bottom: 0;
     order: 4;
+    min-width: 545px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .footer__navigation {
+    padding-right: 110px;
   }
 }
