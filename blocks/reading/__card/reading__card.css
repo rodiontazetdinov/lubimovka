@@ -1,0 +1,9 @@
+.reading__card {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1440px) {
+  .reading__card {
+    margin: 0;
+  }
+}

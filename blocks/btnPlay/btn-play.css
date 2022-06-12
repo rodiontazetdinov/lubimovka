@@ -1,0 +1,15 @@
+.btn-play {
+  position: absolute;
+  top: calc(50% - 32px);
+  left: calc(50% - 32px);
+  width: 64px;
+  height: 64px;
+  border: none;
+  background-color: transparent;
+  background-image: url(../../img/play.svg);
+  transition: all 0.3s ease-out;
+}
+
+.btn-play:hover {
+  transform: scale(1.1);
+}

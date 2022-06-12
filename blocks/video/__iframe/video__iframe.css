@@ -1,0 +1,5 @@
+.video__iframe {
+  border: none;
+  width: 100%;
+  height: calc((100vw - 48px) * 0.56);
+}

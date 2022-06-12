@@ -1,0 +1,9 @@
+.card__city {
+  margin: 8px 0 0 0;
+}
+
+@media screen and (min-width: 1440px) {
+  .card__city {
+    margin: 4px 0 0 0;
+  }
+}
