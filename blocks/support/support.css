@@ -3,11 +3,11 @@
 @import url(../../vendor/fonts/NeueMachinaRegular/PPNeueMachina-Regular.css);
 @import url(../../variables/variables.css);
 
+
 .page {
   width: 100%;
   background-color: #ECEBE8;
-  font-family: FormularLight, serif;
-
+  font-family: 'FormularLight', serif;
 }
 
 .page__container {
@@ -16,37 +16,93 @@
 
 
 .content {
+  display: flex;
+  flex-direction: column;
 }
+
+
+
 .transfer-donation {
+  align-self:center;
+  display: grid;
+  grid-template-columns: minmax(366px, 629px);
+  box-sizing: border-box;
+  padding: 0 23px 24px;
 }
+
+
+@media screen and (min-width: 860px) {
+  .transfer-donation {
+    align-self: flex-end;
+    display: grid;
+    grid-template-columns: minmax(366px, 629px) minmax(366px, 600px);
+    column-gap: 61px;
+    padding: 24px 30px 177px;
+  }
+}
+
 .transfer-donation__text-wrapper {
 }
+
+
 .transfer-donation__title {
-  width: 629px;
   font-family: 'Neue Machina';
   font-style: normal;
   font-weight: 400;
-  font-size: 56px;
-  line-height: 56px;
+  font-size: 40px;
+  line-height: 40px;
+  /* or 100% */
   letter-spacing: -0.01em;
   color: #242424;
+  margin: 0;
+  padding-top: 14px;
 }
+
+@media screen and (min-width: 860px) {
+  .transfer-donation__title {
+    font-size: 56px;
+    line-height: 56px;
+    padding-top: 28px;
+  }
+}
+
 
 .transfer-donation__paragraph {
-  width: 537px;
   font-family: 'Neue Machina';
   font-style: normal;
   font-weight: 400;
-  font-size: 28px;
-  line-height: 32px;
-  /* or 114% */
+  font-size: 20px;
+  line-height: 24px;
+  /* or 120% */
   letter-spacing: -0.01em;
   color: #242424;
+  margin: 0;
+  padding: 24px 0 0 62px;
 }
 
+
+.transfer-donation__paragraph:first-of-type {
+  padding-top: 27px;
+}
+
+@media screen and (min-width: 860px) {
+  .transfer-donation__paragraph {
+    font-size: 28px;
+    line-height: 32px;
+    /* or 114% */
+    padding: 32px 0 0 62px;
+    max-width: 537px;
+  }
+
+  .transfer-donation__paragraph:first-of-type {
+    padding-top: 57px;
+  }
+}
+
+
 .transfer-donation__note {
-  width: 345px;
-  font-family: 'Formular';
+  position: relative;
+  font-family: 'FormularLight';
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
@@ -54,21 +110,76 @@
   /* or 128% */
   font-feature-settings: 'ss01' on;
   color: #242424;
+  margin: 0;
+  margin-top: 61px;
+  padding: 0 0 58px 28px;
+  max-width: 345px;
 }
 
+.transfer-donation__note::before {
+  position: absolute;
+  top: -27px;
+  left: 1px;
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-image: url(../../img/asterisk.svg);
+}
+
+
+@media screen and (min-width: 860px) {
+  .transfer-donation__note {
+    margin-top: 122px;
+    margin-left: 32px;
+  }
+}
+
+
 .transfer-donation__form {
-  width: 600px;
-  height: 630px;
+  height: 524px;
   background: #FFFFFF;
 }
+
+@media screen and (min-width: 860px) {
+  .transfer-donation__form {
+    height: 630px;
+  }
+}
+
 
 .about-donations {
 }
 
-.about-donations__picture {
-  max-width: 780px;
-  max-height: 300px;
+
+.about-donations__title-wrapper {
+  display: block;
 }
+
+@media screen and (min-width: 860px) {
+  .about-donations__title-wrapper {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 860px) {
+  .about-donations__title-wrapper_in-reverse {
+    flex-direction: row-reverse;
+  }
+}
+
+
+
+.about-donations__picture {
+  object-fit: contain;
+  width: 100%;
+}
+
+@media screen and (min-width: 860px) {
+  .about-donations__picture {
+    width: 54.17%;
+  }
+}
+
 
 .about-donations__title {
   width: 410px;
@@ -82,7 +193,11 @@
   color: #242424;
 }
 
-.about-donations__paragraph {
+.about-donations__card-wrapper {
+
+}
+
+.about-donations__card {
   width: 237px;
   font-family: 'Neue Machina';
   font-style: normal;
@@ -93,8 +208,10 @@
   letter-spacing: -0.01em;
   color: #242424;
 }
+
 .accounting {
 }
+
 .accounting__title {
   width: 873px;
   font-family: 'Neue Machina';
