@@ -1,0 +1,22 @@
+.footer__design {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 59px 0 16px;
+}
+.footer__design::before {
+  background-image: url("../../../img/footer-star.svg");
+  background-size: 25px 27px;
+  background-repeat: no-repeat;
+  width: 27px;
+  height: 25px;
+  content: "";
+}
+@media screen and (min-width: 768px) {
+  .footer__design {
+    align-items: flex-start;
+    margin: 0;
+  }
+}
