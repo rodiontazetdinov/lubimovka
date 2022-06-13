@@ -1,2 +1,2 @@
-import {name} from '../components/SliderTop/Slider.js'
-name()
+import { render } from '../components/SliderTop/Slider.js'
+render()

@@ -1,0 +1,12 @@
+.reviews__button_type_back {
+  position: relative;
+  background-image: url(../../../../img/arrow-left.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image .2s ease;
+  transition-delay: .2s;
+}
+
+.reviews__button_type_back:hover {
+  background-image: url(../../../../img/arrow-left-white.png);
+}

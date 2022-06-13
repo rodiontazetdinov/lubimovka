@@ -1,0 +1,15 @@
+.reviews__button_type_next {
+  justify-content: flex-end;
+  position: relative;
+  background-image: url(../../../../img/arrow-right.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image .2s ease;
+  transition-delay: .2s;
+
+}
+
+
+.reviews__button_type_next:hover {
+  background-image: url(../../../../img/arrow-right-white.png);
+}

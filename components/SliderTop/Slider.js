@@ -1,63 +1,115 @@
-import {data} from './data.js'
+import { data } from './data.js'
 import Card from "./Card.js";
-const template = '.top-slider-template'
+import Pagination from './Pagination.js';
+
+const cardTemplate = '.top-slider-template'
 const containerForSliderTop = document.querySelector('.reviews__slider')
-const buttonBack =document.querySelector('.reviews__button_type_back')
-const buttonNext =document.querySelector('.reviews__button_type_next')
+const navigationWidth = + document.querySelector('.reviews__navigation').clientWidth
+let containerForSliderTopPagination
+const buttonBack = document.querySelector('.reviews__button_type_back')
+const buttonNext = document.querySelector('.reviews__button_type_next')
 const reviewsSlider = document.querySelector('.reviews__slider')
 
-export function name() {
-  data.map((e, i) => containerForSliderTop.append(Card(e, template, i)))
+const paginationTemplate = '.top-slider-pagination-template'
+if (navigationWidth > 541) {
+  containerForSliderTopPagination = document.querySelector('.reviews__pagination-radio')
+  document.querySelector('.reviews__pagination-radio_min').style.display = 'none'
+} else {
+  containerForSliderTopPagination = document.querySelector('.reviews__pagination-radio_min')
+  document.querySelector('.reviews__pagination-radio_min').style.display = 'flex'
 }
-const dada = document.querySelector('.reviews__slider')
-console.log(dada.clientWidth)
+
+export function render() {
+  data.map((e, i) => {
+    containerForSliderTop.append(Card(e, cardTemplate, i))
+    containerForSliderTopPagination.append(Pagination(paginationTemplate, i, handleChangePagination))
+  })
+}
+
 let coin = 0
 let right = 0
 
-function turnSlider() {
-  right = 0
+function handleChangePagination(e) {
+  let rightCoin = +(e.target.getAttribute('paginate'))
+  right = (reviewsSlider.clientWidth + 30) * rightCoin
+  coin = rightCoin
+  let cardInFocus = document.querySelector(`li[number="${coin}"]`)
+  let paginateInFocus = document.querySelector(`li[paginate="${coin}"]`)
   reviewsSlider.style.right = `${right}px`
-  let cardInFocus = document.querySelector(`li[number="0"]`)
-  let cardsNoneFocus = document.querySelector(`li[number="${coin}"]`)
+  const reviewsItems = document.querySelectorAll('.reviews__card')
+  reviewsItems.forEach(el => el.classList.add('reviews_inactive'))
+  const reviewsPaginationList = document.querySelectorAll('.reviews__item')
+  reviewsPaginationList.forEach(el => el.classList.remove('reviews__item_active'))
   cardInFocus.classList.remove('reviews_inactive')
-  cardsNoneFocus.classList.add('reviews_inactive')
-  coin = 0
+  paginateInFocus.classList.add('reviews__item_active')
+
+  if (coin > 0 && coin < data.length - 1) {
+    buttonBack.classList.remove('reviews__button_disabled')
+    buttonNext.classList.remove('reviews__button_disabled')
+  }
+
+  if (coin === 0) {
+    buttonBack.classList.add('reviews__button_disabled')
+    buttonNext.classList.remove('reviews__button_disabled')
+  }
+  if (coin === data.length - 1) {
+    buttonNext.classList.add('reviews__button_disabled')
+    buttonBack.classList.remove('reviews__button_disabled')
+  }
 }
 
-function moveSliderBack() {
-  right+= reviewsSlider.clientWidth
-  if(coin === data.length-1){
-    return turnSlider()
-  }
-  coin ++
 
-  let cardInFocus = document.querySelector(`li[number="${coin}"]`)
-  let cardsNoneFocus = document.querySelector(`li[number="${coin-1}"]`)
-  cardInFocus.classList.remove('reviews_inactive')
-  cardsNoneFocus.classList.add('reviews_inactive')
-  reviewsSlider.style.right = `${right}px`
+function stopSlider(e) {
+  const buttonDisabled = e.target.closest('.reviews__button')
+  buttonDisabled.classList.add('reviews__button_disabled')
 }
 
-function moveSliderNext() {
-  if(coin === 0){
-    right = reviewsSlider.clientWidth * (data.length-1)
-    coin = data.length-1
-    let cardInFocus = document.querySelector(`li[number="${coin}"]`)
-    let cardsNoneFocus = document.querySelector(`li[number="0"]`)
-    cardInFocus.classList.remove('reviews_inactive')
-    cardsNoneFocus.classList.add('reviews_inactive')
-    reviewsSlider.style.right = `${right}px`
-    return null
+function moveSliderNext(e) {
+  if (buttonNext.classList.contains('reviews__button_disabled')) {
+    return ''
   }
-  right-=reviewsSlider.clientWidth
+  right += reviewsSlider.clientWidth + 30
+  coin === data.length - 2 ? stopSlider(e) : ''
+  coin++
   let cardInFocus = document.querySelector(`li[number="${coin}"]`)
-  let cardsNoneFocus = document.querySelector(`li[number="${coin-1}"]`)
+  let cardsNoneFocus = document.querySelector(`li[number="${coin - 1}"]`)
+
+
+  let paginateInFocus = document.querySelector(`li[paginate="${coin - 1}"]`)
+  let paginateNoneFocus = document.querySelector(`li[paginate="${coin}"]`)
+  paginateInFocus.classList.remove('reviews__item_active')
+  paginateNoneFocus.classList.add('reviews__item_active')
+
+  cardInFocus.classList.remove('reviews_inactive')
+  cardsNoneFocus.classList.add('reviews_inactive')
+
+  reviewsSlider.style.right = `${right}px`
+  buttonBack.classList.remove('reviews__button_disabled')
+}
+
+function moveSliderBack(e) {
+  if (buttonBack.classList.contains('reviews__button_disabled')) {
+    return ''
+  }
+  coin === 1 ? stopSlider(e) : ''
+  right -= reviewsSlider.clientWidth + 30
+  let cardInFocus = document.querySelector(`li[number="${coin}"]`)
+  let cardsNoneFocus = document.querySelector(`li[number="${coin - 1}"]`)
+
+  let paginateInFocus = document.querySelector(`li[paginate="${coin}"]`)
+  let paginateNoneFocus = document.querySelector(`li[paginate="${coin - 1}"]`)
+
+  paginateInFocus.classList.remove('reviews__item_active')
+  paginateNoneFocus.classList.add('reviews__item_active')
+
   cardInFocus.classList.add('reviews_inactive')
   cardsNoneFocus.classList.remove('reviews_inactive')
   reviewsSlider.style.right = `${right}px`
-  coin --
+  coin--
+  buttonNext.classList.remove('reviews__button_disabled')
 }
 
-// buttonBack.addEventListener('click', moveSliderBack)
-buttonBack.addEventListener('click', moveSliderNext)
-buttonNext.addEventListener('click', moveSliderBack)
+
+
+buttonBack.addEventListener('click', moveSliderBack)  //Слушатели на кнопки
+buttonNext.addEventListener('click', moveSliderNext)  //Слушатели на кнопки

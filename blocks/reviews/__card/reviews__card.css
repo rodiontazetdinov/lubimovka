@@ -1,8 +1,7 @@
-.reviews__card{
+.reviews__card {
   list-style: none;
-  /*min-width: 718px;*/
-  max-width: 718px;
-  /*min-width: 100%;*/
+  width: 100%;
+  min-width: 100%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -11,6 +10,20 @@
   background-color: #fff;
   padding: 55px 89px 72px 89px;
   transition: all 0.5s ease-in-out;
-  position: relative;
 }
 
+
+@media all and (max-width: 668px) {
+  .reviews__card {
+    padding: 77px 27px 72px 27px;
+    text-align: justify;
+  }
+}
+
+@media all and (max-width: 593px) {
+  .reviews__card {
+    padding: 109px 27px 72px 27px;
+    text-align: justify;
+    position: relative;
+  }
+}

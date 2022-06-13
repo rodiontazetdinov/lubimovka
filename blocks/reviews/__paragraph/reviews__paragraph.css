@@ -8,3 +8,12 @@
   font-feature-settings: 'ss01' on;
   color: #242424;
 }
+
+@media all and (max-width: 768px){
+  .reviews__paragraph{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 28px;
+
+  }
+}

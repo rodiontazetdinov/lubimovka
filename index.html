@@ -1,63 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lyubimovka</title>
-    <link rel="stylesheet" href="./pages/index.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lyubimovka</title>
+  <link rel="stylesheet" href="./pages/index.css">
 </head>
+
 <body class="page">
-    <div class="content">
-        <article class="reviews">
-          <div class="reviews__head">
-            <div class="reviews__navigation">
-              <h2 class="reviews__title">Рецензии</h2>
-              <nav class="review__pagination">
-                <li class="reviews__item">
-                  <img src="./img/pagination-point.png" alt="#" class="review__pount">
-                </li>
-                <li class="reviews__item">
-                  <img src="./img/pagination-point.png" alt="#" class="review__pount">
-                </li>
-                <li class="reviews__item">
-                  <img src="./img/pagination-point.png" alt="#" class="review__pount">
-                </li>
-                <div class="reviews__buttons">
-                  <button class="reviews__button reviews__button_type_back">
-                    <img src="./img/slider-arrow-left.png" alt="button-back" class="reviews__image">
-                  </button>
-                  <button class="reviews__button reviews__button_type_next">
-                    <img src="./img/slider-arrow-right.png" alt="button-next" class="reviews__image">
-                  </button>
+  <div class="content">
+    <article class="reviews">
+      <div class="reviews__head">
+        <div class="reviews__navigation">
+          <h2 class="reviews__title">Рецензии</h2>
+          <ul class="reviews__pagination">
+            <ul class="reviews__pagination-radio">
+            </ul>
+            <div class="reviews__buttons">
+              <button class="reviews__button reviews__button_type_back reviews__button_disabled">
+                <img src="./img/ellipse-left.png" alt="button-back" class="reviews__image">
+                <div class="reviews__roll">
+                  <img src="./img/ellipse-left.png" alt="button-back" class="reviews__image_type_rotate-left">
                 </div>
-              </nav>
+              </button>
+              <button class="reviews__button reviews__button_type_next">
+                <img src="./img/ellipse-right.png" alt="button-next" class="reviews__image">
+                <div class="reviews__roll reviews__roll_type_next">
+                  <img src="./img/ellipse-right.png" alt="button-next" class="reviews__image_type_rotate-right">
+                </div>
+              </button>
             </div>
-          </div>
-          <ul class="reviews__slider">
-          </ul>
-<!--          <div class="testo">-->
-
-<!--          </div>-->
-        </article>
-    </div>
-
-
-    <template class="top-slider-template">
-      <li class="reviews__card">
-        <div class="reviews__inform">
-          <img src="#" class="reviews__card-title">
-          <p class="reviews__paragraph">
-          </p>
+            </nav>
         </div>
+      </div>
+      <ul class="reviews__pagination-radio reviews__pagination-radio_min">
+      </ul>
+      <ul class="reviews__slider">
+      </ul>
+    </article>
+  </div>
 
-        <a href="#" class="reviews__full-screen">
-          <img src="./img/arrow-link.png" alt="" class="reviews__read-link">
-          <p class="reviews__read-paragraph">ЧИТАТЬ ПОЛНОСТЬЮ</p>
-        </a>
-      </li>
-    </template>
 
-<script type="module" src="./pages/index.js"></script>
+  <template class="top-slider-template">
+    <li class="reviews__card">
+      <div class="reviews__inform">
+        <img src="#" class="reviews__card-title">
+        <p class="reviews__paragraph">
+        </p>
+      </div>
+      <a href="#" class="reviews__full-screen">
+        <img src="./img/arrow-link.png" alt="" class="reviews__read-link">
+        <p class="reviews__read-paragraph">ЧИТАТЬ ПОЛНОСТЬЮ</p>
+      </a>
+    </li>
+  </template>
+
+  <template class="top-slider-pagination-template">
+    <li class="reviews__item"></li>
+  </template>
+
+  <script type="module" src="./pages/index.js"></script>
 </body>
+
 </html>
