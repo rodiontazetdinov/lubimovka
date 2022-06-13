@@ -1,0 +1,9 @@
+.footer__link {
+  color: #242424;
+  text-decoration: none;
+}
+.footer__link:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
