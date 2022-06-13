@@ -3,3 +3,16 @@
   width: 100%;
   height: calc((100vw - 48px) * 0.56);
 }
+
+@media screen and (min-width: 768px) {
+  .video__iframe {
+    height: calc((50vw - 36px) * 0.56);
+    margin-bottom: 66px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .video__iframe {
+    height: 389px;
+  }
+}
