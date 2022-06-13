@@ -1,0 +1,12 @@
+.footer__company-logo {
+  object-fit: contain;
+}
+/*размеры согласно макета для лого компаний*/
+.footer__company:nth-of-type(1) > .footer__company-logo {
+  width: 110px;
+  height: 41px;
+}
+.footer__company:nth-of-type(2) > .footer__company-logo {
+    width: 106px;
+    height: 37px;
+  }

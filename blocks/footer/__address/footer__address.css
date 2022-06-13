@@ -1,0 +1,11 @@
+.footer__address {
+  margin: 32.64px 0 56px;
+  max-width: 278px;
+}
+@media screen and (min-width: 1000px) {
+  .footer__address {
+    max-width: 203px;
+    margin: 0 auto 0 178px;
+    order: 3;
+  }
+}

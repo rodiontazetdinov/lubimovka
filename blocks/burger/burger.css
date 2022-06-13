@@ -1,0 +1,15 @@
+.burger {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black);
+  border: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .burger {
+    display: none;
+  }
+}

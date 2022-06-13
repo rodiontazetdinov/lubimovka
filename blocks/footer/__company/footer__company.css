@@ -1,0 +1,13 @@
+.footer__company {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+@media screen and (min-width: 1000px) {
+  .footer__company {
+    flex-direction: row;
+    height: min-content;
+  }
+}

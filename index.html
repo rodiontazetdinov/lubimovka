@@ -8,9 +8,98 @@
     <link rel="stylesheet" href="./pages/index.css">
 </head>
 <body class="page">
+     <!-- HEADER -->
+  <header class="header">
+    <div class="header__container">
+      <a href="#" class="header__logo-link">
+        <img src="./img/header-logo.svg" alt="Логотип проекта Любимовка" class="header__logo">
+      </a>
+      <button type="button" class="header__burger burger">
+        <span class="burger__line"></span>
+      </button>
+
+      <div class="header__menu-wrapper">
+        <nav class="header__navigation">
+          <ul class="header__menu">
+            <li class="header__menu-item"><a href="#" class="header__menu-link header__menu-link_hidden">Главная</a></li>
+            <li class="header__menu-item"><a href="#" class="header__menu-link">Афиша</a></li>
+            <li class="header__menu-item"><a href="#" class="header__menu-link">Библотека</a></li>
+            <li class="header__menu-item"><a href="#" class="header__menu-link">Проекты</a></li>
+            <li class="header__menu-item"><a href="#" class="header__menu-link">История</a></li>
+            <li class="header__menu-item"><a href="#" class="header__menu-link">Блог</a></li>
+            <li class="header__menu-item"><a href="#" class="header__menu-link">Новости</a></li>
+            <li class="header__menu-item"><a href="#" class="header__menu-link">О&nbsp;фестивале</a></li>
+            <li class="header__menu-item"><a href="#" class="header__menu-link">Контакты</a></li>
+            <li class="header__menu-item"><a href="#" class="header__menu-link header__menu-link_hidden">Для&nbsp;прессы</a></li>
+          </ul>
+        </nav>
+
+        <div class="header__link-wrapper">
+          <a href="#" class="header__link header__link_hidden">
+            <span class="header__link-text">подать пьесу</span>
+            <span class="header__link-icon"></span>
+          </a>
+          <a href="#" class="header__link">
+            <span class="header__link-text">поддержать</span>
+            <span class="header__link-icon header__link-icon_changed"></span>
+          </a>
+        </div>
+
+        <ul class="header__social">
+          <li class="header__social-item header__social-item_wided">
+            <a href="#" class="header__social-link" target="_blank">
+              <span class="header__link-text">ytube</span>
+              <span class="header__link-icon"></span>
+            </a>
+          </li>
+          <li class="header__social-item">
+            <a href="#" class="header__social-link" target="_blank">
+              <span class="header__link-text">fb</span>
+              <span class="header__link-icon"></span>
+            </a>
+          </li>
+          <li class="header__social-item">
+            <a href="#" class="header__social-link" target="_blank">
+              <span class="header__link-text">inst</span>
+              <span class="header__link-icon"></span>
+            </a>
+          </li>
+          <li class="header__social-item">
+            <a href="#" class="header__social-link" target="_blank">
+              <span class="header__link-text">vk</span>
+              <span class="header__link-icon"></span>
+            </a>
+          </li>
+          <li class="header__social-item">
+            <a href="#" class="header__social-link" target="_blank">
+              <span class="header__link-text">tlgrm</span>
+              <span class="header__link-icon"></span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="header__info">
+          <p class="header__info-text">&copy;&nbsp;Любимовка,&nbsp;2021</p>
+          <p class="header__info-text">
+            <a href="#" class="header__info-link">Политика конфиденциальности</a>
+          </p>
+          <div class="header__designers">
+            <img src="./img/logo-shishki.svg" alt="Логотип shishki.collective" class="header__logo-shishki">
+            <p class="header__info-text">дизайн сайта&nbsp;—
+              <a href="https://ru.shishki.co/" class="header__info-link" target="_blank">shishki.collective</a>
+            </p>
+          </div>
+          <p class="header__info-text">вёрстка и разработака&nbsp;—&nbsp;студенты
+            <a href="https://practicum.yandex.ru/" class="header__info-link" target="_blank">Яндекс.Практикума</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
 
   <section class="feedback">
     <div class="slider">
+
       <div class="slider__header">
         <h2 class="slider__title">Отзывы зрителей</h2>
         <div class="slider__buttons">
@@ -42,16 +131,99 @@
           </li> -->
         </ul>
       </div>
+
     </div>
   </section>
+<!-- footer -->
+    <footer class="footer">
+      <div class="footer__logo"></div>
+      <div class="footer__address">
+        <p class="footer__address-name">Площадка &laquo;8/3&raquo;</p>
+        <a class="footer__address-place" href="https://yandex.ru/maps/-/CCUJyGH7SB" target="_blank">
+          Москва, ул.&nbsp;Казакова,&nbsp;8,&nbsp;стр.&nbsp;3 Метро&nbsp;&laquo;Курская&raquo;</a>
+      </div>
+      <nav class="footer__navigation">
+        <ul class="footer__lists">
+          <li class="footer__items">
+            <!--первый список -->
+            <ul class="footer__list">
+              <li class="footer__item"><a class="footer__link" href="#" target="_blank">Любимовка</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Афиша</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Библиотека</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Блог</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Новости</a></li>
+            </ul>
+          </li>
+          <li class="footer__items">
+            <!--второй список -->
+            <ul class="footer__list">
+              <li class="footer__item"><a class="footer__link" href="#">О фестивале</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Организаторы</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">История</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Контакты</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Для прессы</a></li>
+            </ul>
+          </li>
+          <li class="footer__items">
+            <!--третий список -->
+            <ul class="footer__list">
+              <li class="footer__item"><a class="footer__link" href="#">Все проекты</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Любимовка.Ещё</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Спектакли</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Сборник Любимовка.Пьесы</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Lark+Любимовка</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Практика постдраматурга</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Эхо Любимовки</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <ul class="footer__partners">
+        <li class="footer__partners-title">
+          Генеральные партнеры
+        </li>
+        <li class="footer__company">
+          <img class="footer__company-logo" src="./img/partners/fond.png" alt="Фонд Михаила Прохорова">
+          <span class="footer__company-name">Генеральный партнёр</span>
+        </li>
+        <li class="footer__company">
+          <img class="footer__company-logo" src="./img/partners/mos-brew.png" alt="Московская Пивоваренная Компания">
+        </li>
+        <li class="footer__company">
+          <img class="footer__company-logo" src="./img/partners/sbtg.svg"
+            alt="SBTG.RU. Организация интернет-трансляций и вебинаров">
+          <span class="footer__company-name footer__company-name_type_top-margin">Онлайн-трансляции</span>
+        </li>
+        <li class="footer__company">
+          <img class="footer__company-logo" src="./img/partners/meduza.svg" alt="Медуза">
+        </li>
+      </ul>
+      <div class="footer__separation"></div>
+      <div class="footer__info">
+        <div class="footer__container">
+          <span class="footer__author">&copy; Любимовка, 2022</span>
+          <a class="footer__confidentiality footer__confidentiality_type_margin" href="#">Политика конфиденциальности</a>
+        </div>
+        <div class="footer__container">
+          <div class="footer__design">
+            <span class="footer__author footer__author_type_margin">дизайн сайта —
+              <a class="footer__confidentiality" href="https://ru.shishki.co/" target="_blank">shishki.collective</a>
+            </span>
+          </div>
+          <span class="footer__author footer__author_type_size">вёрстка и разработака — студенты
+            <a class="footer__confidentiality" href="https://practicum.yandex.ru/" target="_blank">Яндекс.Практикума</a>
+          </span>
+        </div>
+      </div>
+    </footer>
 
-  <template id="slide">
-    <li class="slider__item">
-      <p class="slider__text"></p>
-      <p class="slider__signature"></p>
-    </li>
-  </template>
+    <template id="slide">
+      <li class="slider__item">
+        <p class="slider__text"></p>
+        <p class="slider__signature"></p>
+      </li>
+    </template>
 
-<script src="./scripts/index.js"></script>
+    <script src="./scripts/index.js"></script>
 </body>
 </html>

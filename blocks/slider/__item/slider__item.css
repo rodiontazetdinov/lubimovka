@@ -2,7 +2,7 @@
   background: #fff;
   padding: 72px 27px 100px;
   visibility: hidden;
-  width: 100vw;
+  width: 100%;
   display: none;
   box-sizing: border-box;
 }

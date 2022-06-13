@@ -1,0 +1,7 @@
+.footer__item {
+  margin-top: 13px;
+}
+/* отступ между элементами списка для первого элемента обнулен */
+.footer__item:nth-of-type(1) {
+  margin-top: 0;
+}

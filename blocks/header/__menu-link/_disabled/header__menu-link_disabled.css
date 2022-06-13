@@ -1,0 +1,8 @@
+.header__menu-link_disabled {
+  opacity: .2;
+  cursor: auto;
+}
+.header__menu-link_disabled:hover.header__menu-link::before,
+.header__menu-link_disabled:hover.header__menu-link::after {
+  display: none;
+}
