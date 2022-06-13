@@ -1,0 +1,8 @@
+.footer__author_type_margin {
+  margin-left: 9px;
+}
+@media screen and (min-width: 768px) {
+  .footer__author_type_margin {
+    margin-left: 4px;
+  }
+}

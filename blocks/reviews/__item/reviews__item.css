@@ -5,3 +5,7 @@
   border: 1px solid #242424;
   transition: background-color .5s ease-in;
 }
+
+.reviews__item:hover {
+  cursor: pointer;
+}

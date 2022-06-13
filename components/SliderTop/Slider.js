@@ -4,19 +4,22 @@ import Pagination from './Pagination.js';
 
 const cardTemplate = '.top-slider-template'
 const containerForSliderTop = document.querySelector('.reviews__slider')
-const navigationWidth = + document.querySelector('.reviews__navigation').clientWidth
+const navigationWidth = document.querySelector('.reviews__head').offsetWidth
 let containerForSliderTopPagination
 const buttonBack = document.querySelector('.reviews__button_type_back')
 const buttonNext = document.querySelector('.reviews__button_type_next')
 const reviewsSlider = document.querySelector('.reviews__slider')
 
+
 const paginationTemplate = '.top-slider-pagination-template'
-if (navigationWidth > 541) {
+if (reviewsSlider.clientWidth > 541) {
   containerForSliderTopPagination = document.querySelector('.reviews__pagination-radio')
   document.querySelector('.reviews__pagination-radio_min').style.display = 'none'
+  console.log('11111');
 } else {
   containerForSliderTopPagination = document.querySelector('.reviews__pagination-radio_min')
   document.querySelector('.reviews__pagination-radio_min').style.display = 'flex'
+  console.log('2222222');
 }
 
 export function render() {

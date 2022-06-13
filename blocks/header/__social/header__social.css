@@ -1,0 +1,38 @@
+.header__social {
+  list-style: none;
+  margin: 0;
+  padding: 72px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 1440px) {
+  .header__social {
+    position: relative;
+    padding: 0 24px;
+    margin-left: auto;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .header__social::before {
+    content: "";
+    width: 1px;
+    height: 51px;
+    position: absolute;
+    top: -4px;
+    left: 0;
+    background-color: var(--black);
+  }
+
+  .header__social::after {
+    content: "";
+    width: 1px;
+    height: 51px;
+    position: absolute;
+    top: -4px;
+    right: 0;
+    background-color: var(--black);
+  }
+}

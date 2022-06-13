@@ -1,0 +1,25 @@
+.footer {
+  font-family: "FormularLight";
+  padding: 156px 0 0 55px;
+  display: flex;
+  flex-direction: column;
+  min-height: 1526px;
+  box-sizing: border-box;
+  color: var(--black);
+  background-color: var(--background);
+}
+@media screen and (min-width: 608px) {
+  .footer {
+    padding: 181px 0 0 32px;
+    min-height: 589px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}

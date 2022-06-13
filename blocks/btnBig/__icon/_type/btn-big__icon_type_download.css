@@ -1,0 +1,7 @@
+.btn-big__icon_type_download {
+  background-image: url(../../../../img/ico_download.svg);
+}
+
+.btn-big:hover .btn-big__icon_type_download {
+  background-image: url(../../../../img/ico_download-white.svg);
+}

@@ -1,0 +1,7 @@
+.video__text {
+  margin: 0 0 16px;
+}
+
+.video__text:not(:first-of-type) {
+  text-indent: 60px;
+}
