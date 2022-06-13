@@ -1,0 +1,6 @@
+@media screen and (min-width: 768px) {
+  .footer__author_type_size {
+    max-width: 207px;
+    display: block;
+  }
+}
