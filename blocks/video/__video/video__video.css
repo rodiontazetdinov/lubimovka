@@ -1,0 +1,24 @@
+.video__video {
+  position: relative;
+  width: 100%;
+  height: calc((100vw - 48px) * 0.56);
+  margin-bottom: 32px;
+  background-image: url(../../../img/cover.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .video__video {
+    height: calc((50vw - 36px) * 0.56);
+    margin-bottom: 66px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .video__video {
+    height: 389px;
+    margin-bottom: 66px;
+  }
+}

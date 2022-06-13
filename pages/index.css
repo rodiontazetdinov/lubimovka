@@ -3,6 +3,7 @@
 @import url(../vendor/fonts/NeueMachinaRegular/PPNeueMachina-Regular.css);
 @import url(../variables/variables.css);
 @import url(../blocks/page/page.css);
+@import url(../blocks/main/main.css);
 
 /*HEADER*/
 @import url(../blocks/header/header.css);
@@ -39,6 +40,39 @@
 @import url(../blocks/header/__info/header__info.css);
 @import url(../blocks/header/__info-text/header__info-text.css);
 @import url(../blocks/header/__designers/header__designers.css);
+
+/*VIDEO*/
+@import url(../blocks/video/video.css);
+@import url(../blocks/video/__wrapper/video__wrapper.css);
+@import url(../blocks/video/__about/video__about.css);
+@import url(../blocks/video/__content/video__content.css);
+@import url(../blocks/video/__container/video__container.css);
+@import url(../blocks/video/__title/video__title.css);
+@import url(../blocks/video/__participants/video__participants.css);
+@import url(../blocks/video/__position/video__position.css);
+@import url(../blocks/video/__names/video__names.css);
+@import url(../blocks/video/__video/video__video.css);
+@import url(../blocks/video/__iframe/video__iframe.css);
+@import url(../blocks/btnPlay/btn-play.css);
+
+@import url(../blocks/video/__description/video__description.css);
+@import url(../blocks/video/__text/video__text.css);
+
+@import url(../blocks/reading/__title/reading__title.css);
+@import url(../blocks/reading/__card/reading__card.css);
+
+@import url(../blocks/btnBig/btn-big.css);
+@import url(../blocks/btnBig/__icon/btn-big__icon.css);
+@import url(../blocks/btnBig/__icon/_type/btn-big__icon_type_watch.css);
+@import url(../blocks/btnBig/__icon/_type/btn-big__icon_type_download.css);
+
+@import url(../blocks/card/card.css);
+@import url(../blocks/card/__title/card__title.css);
+@import url(../blocks/card/__author/card__author.css);
+@import url(../blocks/card/__surname/card__surname.css);
+@import url(../blocks/card/__city/card__city.css);
+@import url(../blocks/card/__year/card__year.css);
+
 /* footer */
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__logo/footer__logo.css);
