@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-@media screen and (min-width: 880px) {
+@media screen and (min-width: 910px) {
   .slider__item {
     padding-top: 33px;
     padding-bottom: 24px;

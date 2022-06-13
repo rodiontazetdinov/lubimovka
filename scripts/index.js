@@ -9,7 +9,10 @@ const body = document.querySelector('.page'),
 
 const slide = document.querySelector('#slide');
 
+//функции
+
 function createSlide(author, text) {
+  console.log('createSlide');
   const element = slide.content.querySelector('.slider__item').cloneNode(true);
   element.querySelector('.slider__signature').textContent = author;
   element.querySelector('.slider__text').textContent = text;
@@ -19,31 +22,51 @@ function createSlide(author, text) {
 }
 
 function fillSlideList() {
+    console.log('fillSlideList');
+    sliderList.innerHTML = '';
+    fillWindow(sliderConfig.firsSlidePosition);
     sliderConfig.slidesWindow.forEach(item => {
+      console.log(sliderConfig.slidesWindow);
       const element = createSlide(sliderConfig.slides[item].author, sliderConfig.slides[item].text);
-      console.log(item.author);
-      console.log(item.text);
+
       sliderList.append(element);
     });
 }
 
-// тут создаётся начальное кол-во слайдов
-let slidesCount = Math.floor(window.innerWidth / 420);
-let slidesWindow = []; // сюда положим индексы от нуля до размера окна
-//slidesWindow.push() // надо придумать как положить туда индексы
+// function fillStartWindow() { // сюда вместо нуля добавить позишн
+//   console.log('fillStartWindow');
+//   for (let i = 0; i < sliderConfig.slidesCount; i++) {
+//     sliderConfig.slidesWindow.push(i);
+//   }
+// }
 
-function fillStartWindow() {
-  for (let i = 0; i < sliderConfig.slidesCount; i++) {
+function fillWindow(firsSlidePosition) { // сюда вместо нуля добавить позишн
+  console.log('filltWindow');
+  sliderConfig.slidesWindow = [];
+  for (let i = firsSlidePosition; i < sliderConfig.slidesCount; i++) {
     sliderConfig.slidesWindow.push(i);
   }
 }
 
+function countSlides() {
+  console.log('counSlides');
+  sliderConfig.slidesCount = (Math.floor(window.innerWidth / 420) < 4) ? Math.floor(window.innerWidth / 420) : 3;
+}
+
+// тут создаётся начальное кол-во слайдов
+let slidesCount = (Math.floor(window.innerWidth / 420) < 4) ? Math.floor(window.innerWidth / 420) : 3;//   let result = условие ? значение1 : значение2;
+let slidesWindow = []; // сюда положим индексы от нуля до размера окна
+//slidesWindow.push() // надо придумать как положить туда индексы
+
+
+
 const sliderConfig = {
   slidesCount: slidesCount,
+  firsSlidePosition: 0,
   slides: [
     {
       author: 'Наталья Зайцева',
-      text: 'Что-то похожее на&nbsp;эффект от&nbsp;мультфильмов типа &laquo;Сауз Парк&raquo; или про коня Боджэка возникает&nbsp;&mdash; я&nbsp;думаю, и&nbsp;пьеса написана с&nbsp;этой интонацией американских взрослых мультсериалов. И&nbsp;как хорошо все это с&nbsp;куклой-носочком. Так все чисто сделано!'
+      text: 'Что-то похожее на эффект от мультфильмов типа «Сауз Парк» или про коня Боджэка возникает — я думаю, и пьеса написана с этой интонацией американских взрослых мультсериалов. И как хорошо все это с куклой-носочком. Так все чисто сделано!'
     },
     {
       author: 'Дина Годер',
@@ -51,11 +74,11 @@ const sliderConfig = {
     },
     {
       author: 'Дарья Морозова',
-      text: 'Мне данный формат дал возможность самой выбирать, как двигается персонаж, что на&nbsp;нем надето, какую машину он&nbsp;водит, и&nbsp;что за&nbsp;плакат висит в&nbsp;подвале церкви. Это было приятно, ведь я&nbsp;как будто сама поучаствовала в&nbsp;спектакле'
+      text: 'Мне данный формат дал возможность самой выбирать, как двигается персонаж, что на нем надето, какую машину он водит, и что за плакат висит в подвале церкви. Это было приятно, ведь я как будто сама поучаствовала в спектакле'
     },
     {
       author: 'Наталья Зайцева',
-      text: 'Что-то похожее на&nbsp;эффект от&nbsp;мультфильмов типа &laquo;Сауз Парк&raquo; или про коня Боджэка возникает&nbsp;&mdash; я&nbsp;думаю, и&nbsp;пьеса написана с&nbsp;этой интонацией американских взрослых мультсериалов. И&nbsp;как хорошо все это с&nbsp;куклой-носочком. Так все чисто сделано!'
+      text: 'Что-то похожее на эффект от мультфильмов типа «Сауз Парк» или про коня Боджэка возникает — я думаю, и пьеса написана с этой интонацией американских взрослых мультсериалов. И как хорошо все это с куклой-носочком. Так все чисто сделано!'
     },
     {
       author: 'Дина Годер',
@@ -63,7 +86,7 @@ const sliderConfig = {
     },
     {
       author: 'Дарья Морозова',
-      text: 'Мне данный формат дал возможность самой выбирать, как двигается персонаж, что на&nbsp;нем надето, какую машину он&nbsp;водит, и&nbsp;что за&nbsp;плакат висит в&nbsp;подвале церкви. Это было приятно, ведь я&nbsp;как будто сама поучаствовала в&nbsp;спектакле'
+      text: 'Мне данный формат дал возможность самой выбирать, как двигается персонаж, что на нем надето, какую машину он водит, и что за плакат висит в подвале церкви. Это было приятно, ведь я как будто сама поучаствовала в спектакле'
     }
   ],
  slidesWindow: [] //добавить состояние окна, чтобы слайдер не забывал какие именно слайды были отрисованы
@@ -72,17 +95,39 @@ const sliderConfig = {
 // console.log(sliderConfig.slides[0].author);
 
 window.addEventListener('resize',(evt) => {
-  sliderConfig.slidesCount = Math.floor(evt.target.innerWidth / 420);
+  //countSlides();
+  //sliderConfig.slidesCount = (Math.floor(window.innerWidth / 420) < 4) ? Math.floor(window.innerWidth / 420) : 3;
 
 });
 
+window.addEventListener('resize',(evt) => {
 
+  if (window.innerWidth < 910 ) {
+    sliderConfig.slidesCount = 1;
+    fillSlideList();
+
+  }
+  if (window.innerWidth >= 910 && window.innerWidth <= 1329) {
+    sliderConfig.slidesCount = 2;
+    fillSlideList();
+  }
+
+  if (window.innerWidth >=1330) {
+    sliderConfig.slidesCount = 3;
+
+    fillSlideList();
+  }
+});
+
+
+
+// console.log(sliderList.innerHTML);
 
 // window.addEventListener('resize',(evt) => {  //показывает сколько сейчас слайдов помещается
 //   console.log(sliderConfig.slidesCount);
 // });
 
-fillStartWindow();
+// fillStartWindow();
 fillSlideList();
 
 
