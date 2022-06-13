@@ -8,6 +8,11 @@
     border-left: transparent;
     border-top: transparent;
     line-height: 14px;
+    background-image: linear-gradient(black, black);
+    background-position: 100%0%;
+    background-repeat: no-repeat;
+    background-size: 0%100%;
+    transition: background-size .5s, color .5s;
 }
 
 @media (min-width: 768px) and (max-width: 1440px) {

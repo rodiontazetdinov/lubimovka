@@ -1,16 +1,16 @@
 .play-button {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: space-between;
-    padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  padding: 0;
+  transition: .5s;
 }
 
 .play-button:hover {
-  background-color: black;
-  color: white;
+  background-size: 100%100%;
+  color: #fff;
 }
-
 .play-button:hover > .play-button__img_type-ticket{
   background-image: url(../../img/icon_arrow-right_white.svg);
 }
@@ -18,3 +18,8 @@
 .play-button:hover > .play-button__img_type-project{
   background-image: url(../../img/arrow-left-white.svg);
 }
+
+.play-button:active {
+  transform: scale(1.2);
+}
+
