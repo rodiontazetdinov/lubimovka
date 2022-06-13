@@ -1,0 +1,7 @@
+.btn-big__icon_type_watch {
+  background-image: url(../../../../img/ico_watch.svg);
+}
+
+.btn-big:hover .btn-big__icon_type_watch {
+  background-image: url(../../../../img/ico_watch-white.svg);
+}

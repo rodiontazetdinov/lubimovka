@@ -2,4 +2,10 @@
     width: 100%;
     background-color: #ECEBE8;
     font-family: FormularLight, serif;
+    color: var(--black);
 }
+
+/*.page_temp {*/
+/*  background-color: var(--purple);*/
+/*  height: 3000px;*/
+/*}*/

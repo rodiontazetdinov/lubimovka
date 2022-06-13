@@ -1,0 +1,17 @@
+.video__container {
+  width: calc(100% - 48px);
+}
+
+@media screen and (min-width: 768px) {
+  .video__container {
+    width: 100%;
+    flex-shrink: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .video__container {
+    width: 100%;
+    flex-shrink: 0;
+  }
+}

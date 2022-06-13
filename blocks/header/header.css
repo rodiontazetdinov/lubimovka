@@ -1,0 +1,13 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--background);
+}
+
+@media screen and (min-width: 1440px) {
+  .header {
+    position: fixed;
+    z-index: 10;
+  }
+}
