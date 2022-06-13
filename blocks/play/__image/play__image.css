@@ -5,7 +5,7 @@
     height: auto;
 }
 
-@media (min-width: 415px) and (max-width: 768px) {
+@media (min-width: 415px) and (max-width: 767px) {
   .play__image {
      max-width: 80%;
      margin-left: 5%;

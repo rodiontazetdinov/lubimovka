@@ -4,12 +4,11 @@
   align-content: center;
   justify-content: space-between;
   padding: 0;
-  transition: .5s;
-  margin-top: -50px;
+  transition: all 1s ease-in-out;
 }
 
 .play-button:hover {
-  background-size: 100%100%;
+  background-size: 100% 100%;
   color: #fff;
 }
 .play-button:hover > .play-button__img_type-ticket{
@@ -21,6 +20,6 @@
 }
 
 .play-button:active {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
