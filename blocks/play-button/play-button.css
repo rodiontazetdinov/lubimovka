@@ -5,3 +5,16 @@
     justify-content: space-between;
     padding: 0;
 }
+
+.play-button:hover {
+  background-color: black;
+  color: white;
+}
+
+.play-button:hover > .play-button__img_type-ticket{
+  background-image: url(../../img/icon_arrow-right_white.svg);
+}
+
+.play-button:hover > .play-button__img_type-project{
+  background-image: url(../../img/arrow-left-white.svg);
+}
