@@ -12,7 +12,6 @@ const slide = document.querySelector('#slide');
 //функции
 
 function createSlide(author, text) {
-  console.log('createSlide');
   const element = slide.content.querySelector('.slider__item').cloneNode(true);
   element.querySelector('.slider__signature').textContent = author;
   element.querySelector('.slider__text').textContent = text;
@@ -22,42 +21,77 @@ function createSlide(author, text) {
 }
 
 function fillSlideList() {
-    console.log('fillSlideList');
     sliderList.innerHTML = '';
     fillWindow(sliderConfig.firsSlidePosition);
     sliderConfig.slidesWindow.forEach(item => {
-      console.log(sliderConfig.slidesWindow);
       const element = createSlide(sliderConfig.slides[item].author, sliderConfig.slides[item].text);
 
       sliderList.append(element);
     });
 }
 
-// function fillStartWindow() { // сюда вместо нуля добавить позишн
-//   console.log('fillStartWindow');
-//   for (let i = 0; i < sliderConfig.slidesCount; i++) {
-//     sliderConfig.slidesWindow.push(i);
-//   }
-// }
-
 function fillWindow(firsSlidePosition) { // сюда вместо нуля добавить позишн
-  console.log('filltWindow');
-  sliderConfig.slidesWindow = [];
-  for (let i = firsSlidePosition; i < sliderConfig.slidesCount; i++) {
-    sliderConfig.slidesWindow.push(i);
+
+  if ((firsSlidePosition + sliderConfig.slidesCount) < sliderConfig.slides.length) {
+    sliderConfig.slidesWindow = [];
+    for (let i = firsSlidePosition; i < (firsSlidePosition + sliderConfig.slidesCount); i++) {
+      sliderConfig.slidesWindow.push(i);
+    }
+  } else {
+    sliderConfig.firsSlidePosition -= sliderConfig.slidesCount;
+    checkArrowBtns();
   }
+
 }
 
 function countSlides() {
-  console.log('counSlides');
   sliderConfig.slidesCount = (Math.floor(window.innerWidth / 420) < 4) ? Math.floor(window.innerWidth / 420) : 3;
+}
+
+function slideNext () {
+  if (!rightArrowBtn.hasAttribute('disabled')) {
+    sliderConfig.firsSlidePosition += sliderConfig.slidesCount;
+    console.log(sliderConfig.firsSlidePosition, 'firsSlidePosition');
+    console.log(sliderConfig.slidesWindow, 'slidesWindow');
+    console.log(sliderConfig.slidesCount, 'slidesCount');
+    console.log(sliderConfig.slidesCount, '----------------------------');
+
+  }
+}
+
+function slidePrevious () {
+  if (!leftArrowBtn.hasAttribute('disabled')) {
+    sliderConfig.firsSlidePosition -= sliderConfig.slidesCount;
+    console.log(sliderConfig.firsSlidePosition);
+  }
+
+}
+
+function checkArrowBtns () {
+  if ((sliderConfig.firsSlidePosition + sliderConfig.slidesCount) > sliderConfig.slides.length) {
+    rightArrowBtn.setAttribute('disabled', 'disabled');
+    rightArrowBtn.classList.add('slider__button_inactive');
+  } else {
+    if (rightArrowBtn.hasAttribute('disabled')) {
+      rightArrowBtn.removeAttribute('disabled');
+      rightArrowBtn.classList.remove('slider__button_inactive');
+    }
+  }
+  if ((sliderConfig.firsSlidePosition - sliderConfig.slidesCount) < 0) {
+    leftArrowBtn.setAttribute('disabled', 'disabled');
+    leftArrowBtn.classList.add('slider__button_inactive');
+  } else {
+    if (leftArrowBtn.hasAttribute('disabled')) {
+      leftArrowBtn.removeAttribute('disabled');
+      leftArrowBtn.classList.remove('slider__button_inactive');
+    }
+  }
 }
 
 // тут создаётся начальное кол-во слайдов
 let slidesCount = (Math.floor(window.innerWidth / 420) < 4) ? Math.floor(window.innerWidth / 420) : 3;//   let result = условие ? значение1 : значение2;
-let slidesWindow = []; // сюда положим индексы от нуля до размера окна
+//let slidesWindow = []; // сюда положим индексы от нуля до размера окна
 //slidesWindow.push() // надо придумать как положить туда индексы
-
 
 
 const sliderConfig = {
@@ -92,13 +126,7 @@ const sliderConfig = {
  slidesWindow: [] //добавить состояние окна, чтобы слайдер не забывал какие именно слайды были отрисованы
 };
 
-// console.log(sliderConfig.slides[0].author);
-
-window.addEventListener('resize',(evt) => {
-  //countSlides();
-  //sliderConfig.slidesCount = (Math.floor(window.innerWidth / 420) < 4) ? Math.floor(window.innerWidth / 420) : 3;
-
-});
+//обработчики
 
 window.addEventListener('resize',(evt) => {
 
@@ -119,25 +147,46 @@ window.addEventListener('resize',(evt) => {
   }
 });
 
+rightArrowBtn.addEventListener('click', () => {
+  slideNext();
+  checkArrowBtns();
+});
+
+leftArrowBtn.addEventListener('click', () => {
+  slidePrevious();
+  checkArrowBtns();
+});
 
 
-// console.log(sliderList.innerHTML);
-
-// window.addEventListener('resize',(evt) => {  //показывает сколько сейчас слайдов помещается
-//   console.log(sliderConfig.slidesCount);
-// });
-
-// fillStartWindow();
 fillSlideList();
 
 
 //обработчики
 
-// rightArrowBtn.addEventListener('click', () => {
-//   slideNext(sliderItems);
-//   handleBtnState(rightArrowBtn);
-//   activateBtn(leftArrowBtn);
-// });
+
+
+// function checkLeftArrowBtn () {
+//   if ((sliderConfig.firsSlidePosition - sliderConfig.slidesCount) < 0) {
+//     leftArrowBtn.setAttribute('disabled', 'disabled');
+//     leftArrowBtn.classList.add('slider__button_inactive');
+//   } else {
+//     if (leftArrowBtn.hasAttribute('disabled')) {
+//       leftArrowBtn.removeAttribute('disabled');
+//       leftArrowBtn.classList.remove('slider__button_inactive');
+//     }
+//   }
+//   if ((sliderConfig.firsSlidePosition + sliderConfig.slidesCount) > sliderConfig.slides.length) {
+//     rightArrowBtn.setAttribute('disabled', 'disabled');
+//     rightArrowBtn.classList.add('slider__button_inactive');
+//   } else {
+//     if (rightArrowBtn.hasAttribute('disabled')) {
+//       rightArrowBtn.removeAttribute('disabled');
+//       rightArrowBtn.classList.remove('slider__button_inactive');
+//     }
+//   }
+// }
+
+
 
 // leftArrowBtn.addEventListener('click', () => {
 //   slidePrevious(sliderItems);
