@@ -1,7 +1,7 @@
-@import url(../../vendor/normalize.css);
-@import url(../../vendor/fonts/FormularLight/formular-light.css);
-@import url(../../vendor/fonts/NeueMachinaRegular/PPNeueMachina-Regular.css);
-@import url(../../variables/variables.css);
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts/FormularLight/formular-light.css);
+@import url(../vendor/fonts/NeueMachinaRegular/PPNeueMachina-Regular.css);
+@import url(../variables/variables.css);
 
 
 .page {
@@ -120,7 +120,7 @@
   content: "";
   width: 25px;
   height: 25px;
-  background-image: url(../../img/asterisk.svg);
+  background-image: url(../img/asterisk.svg);
 }
 
 
@@ -332,6 +332,11 @@
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .accounting__title {
+    padding-left: 268px;
+  }
+}
 
 .accounting__mail-link {
   color: inherit;
