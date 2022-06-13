@@ -1,0 +1,9 @@
+.btn-big__icon {
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 0.3s ease-out;
+}

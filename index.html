@@ -97,43 +97,127 @@
     </div>
   </header>
 
-  <section class="feedback">
-    <div class="slider">
+  <main class="main">
+    <!--VIDEO-->
+    <section class="video">
+      <div class="video__wrapper">
+        <div class="video__about">
+          <div class="video__container">
+            <h3 class="video__title">
+              <span class="video__timing">1&nbsp;ч.&nbsp;15&nbsp;мин.</span>
+              <span class="video__separator">&nbsp;|&nbsp;</span>
+              <span class="video__age-limit">18+</span>
+            </h3>
 
-      <div class="slider__header">
-        <h2 class="slider__title">Отзывы зрителей</h2>
-        <div class="slider__buttons">
-          <button id="left-arrow" class="slider__button slider__button_inactive" type="button"  disabled><img src="./img/slider-arrow-left.png" alt="Кнопка влево"></button>
-          <button id="right-arrow" class="slider__button" type="button"><img src="./img/slider-arrow-right.png" alt="Кнопка вправо"></button>
+            <dl class="video__participants">
+              <dt class="video__position">Драматург</dt>
+              <dd class="video__names">Роберт Аскинс</dd>
+
+              <dt class="video__position">Перевод</dt>
+              <dd class="video__names">Оксана Алёшина</dd>
+
+              <dt class="video__position">Адаптация текста</dt>
+              <dd class="video__names">Валерий Печейкин</dd>
+
+              <dt class="video__position">Режиссёр</dt>
+              <dd class="video__names">Юрий Муравицкий</dd>
+
+              <dt class="video__position">Актёры</dt>
+              <dd class="video__names">Фёдор Кокорев, Коля Ноекёльн, Ксения Чекина, Александр Пронькин, Владимир Морозов, Светлана Маршанкина</dd>
+            </dl>
+          </div>
         </div>
-        <ul class="slider__page-dots">
-          <li><button type="button" class="slider__page-dot slider__page-dot_active"></button></li>
-          <li><button type="button" class="slider__page-dot"></button></li>
-          <li><button type="button" class="slider__page-dot"></button></li>
-          <li><button type="button" class="slider__page-dot"></button></li>
-        </ul>
+
+        <div class="video__content">
+          <div class="video__container">
+            <div class="video__video">
+<!--              <button class="video__btn-play btn-play"></button>-->
+              <iframe
+                class="video__iframe"
+                src="https://www.youtube.com/embed/juq_3oRQ6yc"
+                title="YouTube video player"
+                id="player"
+                type="text/html"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <div class="video__description">
+              <p class="video__text">
+                Пьеса «Длань Господня» (Hand to God) — лауреат американской театральной премии OBIE (Off-Broadway Theater Awards), номинант ежегодно присуждаемой премии TONY (Theatre Of New York), театрального аналога «Оскара», и номинант на Британскую премию Лоуренса Оливье в качестве «Лучшей Новой Комедии». Она была поставлена в бродвейских театрах и в лондонском Вест-Энде.
+              </p>
+              <p class="video__text">
+                Этот спектакль – результат коллаборации фестиваля драматургии «Любимовка», который запустил проект по выпуску собственных спектаклей «Любимовка.Продакшн», Театра 18+ и Театра.doc. Исполнители – выпускники актерской лаборатории Юрия Муравицкого Московской Школы Нового Кино.
+              </p>
+              <p class="video__text">
+                Режиссёр спектакля Юрий Муравицкий – лауреат Национальной театральной премии «Золотая маска», лауреат премий Herald Angel Award и Total Theatre Award в номинации Innovation, Experimentation & Playing with Form на Edinburgh Festival Fringe: «В этой пьесе меня задевает её смелость и свобода. И то, что она написана смешно. Мне сейчас интересны комедии. В январе я выпустил «Lё Тартюф. Комедия» в театре на Таганке — тоже комедию и тоже в известном смысле антиклерикальную. У меня есть стойкое ощущение что всему, что сейчас происходит в нашей стране и в мире, мы можем противопоставить только смех. Иногда горький смех, иногда злой. Сейчас в воздухе столько ненависти, что нам всем полезно больше смеяться. И над собой в том числе. «Длань Господня» — это чёрная комедия. Помимо прочего, она показывает к чему приводит навязывание и насильственное насаждение религии».
+              </p>
+              <p class="video__text">
+                Пьеса была успешно представлена в России в формате читки в 2016 году рамках лаборатории LARK+Любимовка на сцене Центра им. Мейерхольда.
+              </p>
+            </div>
+
+            <section class="reading">
+              <h3 class="reading__title">Почитать пьесу</h3>
+
+              <div class="reading__card card">
+                <p class="card__title">Конкретные разговоры пожилых супругов ни&nbsp;о&nbsp;чём</p>
+                <a href="#" class="btn-big" target="_blank">смотреть читку
+                  <span class="btn-big__icon btn-big__icon_type_watch"></span>
+                </a>
+                <a href="#" class="btn-big">скачать пьесу
+                  <span class="btn-big__icon btn-big__icon_type_download"></span>
+                </a>
+                <p class="card__author">Екатерина <span class="card__surname">Августеняк</span></p>
+                <p class="card__city">Санкт-Петербург
+                  <span class="card__year">2020</span>
+                </p>
+              </div>
+            </section>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="slider__content">
+    <section class="feedback">
+      <div class="slider">
 
-        <ul class="slider__list">
-          <!-- <li class="slider__item slider__item_is-visible">
-            <p class="slider__text">Что-то похожее на&nbsp;эффект от&nbsp;мультфильмов типа &laquo;Сауз Парк&raquo; или про коня Боджэка возникает&nbsp;&mdash; я&nbsp;думаю, и&nbsp;пьеса написана с&nbsp;этой интонацией американских взрослых мультсериалов. И&nbsp;как хорошо все это с&nbsp;куклой-носочком. Так все чисто сделано!</p>
-            <p class="slider__signature">Наталья Зайцева</p>
-          </li>
-          <li class="slider__item">
-            <p class="slider__text">Для самой этой истории формат читки работает отличным ироническим отстранением</p>
-            <p class="slider__signature">Дина Годер</p>
-          </li>
-          <li class="slider__item">
-            <p class="slider__text">Мне данный формат дал возможность самой выбирать, как двигается персонаж, что на&nbsp;нем надето, какую машину он&nbsp;водит, и&nbsp;что за&nbsp;плакат висит в&nbsp;подвале церкви. Это было приятно, ведь я&nbsp;как будто сама поучаствовала в&nbsp;спектакле</p>
-            <p class="slider__signature">Дарья Морозова</p>
-          </li> -->
-        </ul>
+        <div class="slider__header">
+          <h2 class="slider__title">Отзывы зрителей</h2>
+          <div class="slider__buttons">
+            <button id="left-arrow" class="slider__button slider__button_inactive" type="button"  disabled><img src="./img/slider-arrow-left.png" alt="Кнопка влево"></button>
+            <button id="right-arrow" class="slider__button" type="button"><img src="./img/slider-arrow-right.png" alt="Кнопка вправо"></button>
+          </div>
+          <ul class="slider__page-dots">
+            <li><button type="button" class="slider__page-dot slider__page-dot_active"></button></li>
+            <li><button type="button" class="slider__page-dot"></button></li>
+            <li><button type="button" class="slider__page-dot"></button></li>
+            <li><button type="button" class="slider__page-dot"></button></li>
+          </ul>
+        </div>
+
+        <div class="slider__content">
+
+          <ul class="slider__list">
+            <!-- <li class="slider__item slider__item_is-visible">
+              <p class="slider__text">Что-то похожее на&nbsp;эффект от&nbsp;мультфильмов типа &laquo;Сауз Парк&raquo; или про коня Боджэка возникает&nbsp;&mdash; я&nbsp;думаю, и&nbsp;пьеса написана с&nbsp;этой интонацией американских взрослых мультсериалов. И&nbsp;как хорошо все это с&nbsp;куклой-носочком. Так все чисто сделано!</p>
+              <p class="slider__signature">Наталья Зайцева</p>
+            </li>
+            <li class="slider__item">
+              <p class="slider__text">Для самой этой истории формат читки работает отличным ироническим отстранением</p>
+              <p class="slider__signature">Дина Годер</p>
+            </li>
+            <li class="slider__item">
+              <p class="slider__text">Мне данный формат дал возможность самой выбирать, как двигается персонаж, что на&nbsp;нем надето, какую машину он&nbsp;водит, и&nbsp;что за&nbsp;плакат висит в&nbsp;подвале церкви. Это было приятно, ведь я&nbsp;как будто сама поучаствовала в&nbsp;спектакле</p>
+              <p class="slider__signature">Дарья Морозова</p>
+            </li> -->
+          </ul>
+        </div>
+
       </div>
+    </section>
+  </main>
 
-    </div>
-  </section>
 <!-- footer -->
     <footer class="footer">
       <div class="footer__logo"></div>
