@@ -1,0 +1,13 @@
+.header__link-wrapper {
+  padding: 57px 0 0 56px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 1440px) {
+  .header__link-wrapper {
+    padding: 0;
+    flex-direction: row;
+    order: 1;
+  }
+}

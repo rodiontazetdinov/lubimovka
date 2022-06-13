@@ -1,0 +1,13 @@
+.header__info-text {
+  max-width: 250px;
+  margin: 0;
+  font-family: 'FormularLight';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--black);
+}
+.header__info-text:first-of-type {
+  margin-bottom: 10px;
+}
