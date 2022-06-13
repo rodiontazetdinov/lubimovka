@@ -1,6 +1,7 @@
 .play__sсhedule {
   padding: 0;
   margin: 31px 0 0 40px;
+  margin-left: 7.5%;
   width: 60%;
   font-weight: 400;
   font-size: 28px;
@@ -8,7 +9,7 @@
   font-family: 'Neue Machina';
 }
 
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 768px) and (max-width: 2560px) {
   .play__sсhedule {
     grid-area: play__sсhedule;
     margin-top: 212px;

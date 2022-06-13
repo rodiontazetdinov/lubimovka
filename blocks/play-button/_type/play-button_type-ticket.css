@@ -1,5 +1,6 @@
 .play-button_type-ticket {
     margin: 16px auto 0 40px;
+    margin-left: 7.5%;
     padding: 16px 20px 16px 16px;
     width: 240px;
     height: 56px;
@@ -13,7 +14,7 @@
     transition: background-size .5s, color .5s;
 }
 
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 768px) and (max-width: 2560px) {
   .play-button_type-ticket {
     grid-area: play-button_type-ticket;
     margin-top: 16px;

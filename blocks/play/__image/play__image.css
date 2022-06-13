@@ -1,7 +1,8 @@
 .play__image {
     padding: 0;
     margin: 38px auto 0 auto;
-    max-width: 100%;
+    width: 100%;
+    height: auto;
 }
 
 @media (min-width: 415px) and (max-width: 768px) {
@@ -12,7 +13,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 768px) and (max-width: 2560px) {
   .play__image {
     grid-area: play__image;
     margin-top: 95px;

@@ -1,6 +1,7 @@
 .play__text {
     padding: 0;
     margin: 56px auto 0 auto;
+    margin-left: 7.5%;
     max-width: 87.5%;
     font-weight: 400;
     font-style: normal;
@@ -9,7 +10,7 @@
     font-family: 'Neue Machina';
 }
 
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 768px) and (max-width: 2560px) {
   .play__text {
     font-size: 28px;
     line-height: 32px;
