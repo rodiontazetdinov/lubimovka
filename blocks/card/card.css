@@ -1,0 +1,17 @@
+.card {
+  font-family: 'FormularLight';
+  font-style: normal;
+  font-weight: 300;
+  width: 244px;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: normal;
+  color: var(--black);
+  background-color: var(--background);
+}
+
+@media screen and (min-width: 1440px) {
+  .card {
+    width: 240px;
+  }
+}

@@ -1,0 +1,3 @@
+.video__names:not(:last-of-type) {
+  margin: 0 0 24px 33px;
+}

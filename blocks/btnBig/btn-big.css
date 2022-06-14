@@ -1,0 +1,25 @@
+.btn-big {
+  position: relative;
+  width: 100%;
+  padding: 15px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'FormularLight';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--black);
+  background-color: var(--accent);
+  box-sizing: border-box;
+  border-top: 1px solid var(--black);
+  transition: all 0.3s ease-out;
+}
+
+.btn-big:hover {
+  color: var(--white);
+  background-color: var(--black);
+}
