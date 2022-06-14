@@ -7,7 +7,7 @@
 
 @media (min-width: 415px) and (max-width: 767px) {
   .play__image {
-     max-width: 80%;
+     max-width: 90%;
      margin-left: 5%;
      margin-right: 5%;
   }
@@ -17,8 +17,7 @@
   .play__image {
     grid-area: play__image;
     margin-top: 95px;
-    width: 720px;
-    height: 614px;
+    max-width: 720px;
     object-fit: cover;
   }
 }

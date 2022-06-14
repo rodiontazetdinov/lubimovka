@@ -13,8 +13,8 @@
 @media (min-width: 415px) and (max-width: 767px) {
   .play__title {
     grid-area: play__title;
-    font-size: 48px;
-    line-height: 50px;
+    font-size: 43px;
+    line-height: 46px;
     margin-top: 92px;
     margin-right: auto;
   }
@@ -23,8 +23,8 @@
 @media (min-width: 768px) and (max-width: 2560px) {
   .play__title {
     grid-area: play__title;
-    min-width: 540px;
-    font-size: 70px;
+    width: calc(100%/2);
+    font-size: 5vw;
     line-height: 72px;
     margin-top: 92px;
     margin-left: 120px;

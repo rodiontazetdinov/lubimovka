@@ -7,6 +7,7 @@
 
 @media (min-width: 768px) and (max-width: 2560px) {
   .play {
+    flex-shrink: 0;
     padding-bottom: 68px;
     display: grid;
     grid-auto-flow: row;
