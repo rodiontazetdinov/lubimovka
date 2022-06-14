@@ -1,0 +1,11 @@
+.transfer-donation__form {
+  height: 524px;
+  background: #FFFFFF;
+}
+
+
+@media screen and (min-width: 869px) {
+  .transfer-donation__form {
+    height: 630px;
+  }
+}

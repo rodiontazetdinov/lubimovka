@@ -1,0 +1,30 @@
+.transfer-donation__paragraph {
+  font-family: 'Neue Machina';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  color: #242424;
+  margin: 0;
+  padding: 24px 0 0 62px;
+}
+
+
+.transfer-donation__paragraph:first-of-type {
+  padding-top: 27px;
+}
+
+
+@media screen and (min-width: 869px) {
+  .transfer-donation__paragraph {
+    font-size: 28px;
+    line-height: 32px;
+    padding-top: 32px;
+    max-width: 537px;
+  }
+
+  .transfer-donation__paragraph:first-of-type {
+    padding-top: 57px;
+  }
+}

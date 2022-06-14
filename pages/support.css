@@ -2,374 +2,88 @@
 @import url(../vendor/fonts/FormularLight/formular-light.css);
 @import url(../vendor/fonts/NeueMachinaRegular/PPNeueMachina-Regular.css);
 @import url(../variables/variables.css);
-
-
-.page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-width: 414px;
-  background-color: #ECEBE8;
-  font-family: 'FormularLight', serif;
-}
-
-
-.page__container {
-  width: 100%;
-  max-width: 1440px;
-}
-
-
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-.transfer-donation {
-  align-self:flex-end;
-  display: grid;
-  grid-template-columns: minmax(366px, 629px);
-  box-sizing: border-box;
-  padding: 0 23px 24px;
-}
-
-
-@media screen and (min-width: 869px) {
-  .transfer-donation {
-    display: grid;
-    grid-template-columns: minmax(366px, 629px) minmax(366px, 600px);
-    column-gap: 61px;
-    padding: 24px 30px 81px;
-  }
-}
-
-
-.transfer-donation__title {
-  font-family: 'Neue Machina';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 40px;
-  letter-spacing: -0.01em;
-  color: #242424;
-  margin: 0;
-  padding-top: 14px;
-}
-
-
-@media screen and (min-width: 869px) {
-  .transfer-donation__title {
-    font-size: 56px;
-    line-height: 56px;
-    padding-top: 28px;
-  }
-}
-
-
-.transfer-donation__paragraph {
-  font-family: 'Neue Machina';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-  letter-spacing: -0.01em;
-  color: #242424;
-  margin: 0;
-  padding: 24px 0 0 62px;
-}
-
-
-.transfer-donation__paragraph:first-of-type {
-  padding-top: 27px;
-}
-
-
-@media screen and (min-width: 869px) {
-  .transfer-donation__paragraph {
-    font-size: 28px;
-    line-height: 32px;
-    padding-top: 32px;
-    max-width: 537px;
-  }
-
-  .transfer-donation__paragraph:first-of-type {
-    padding-top: 57px;
-  }
-}
-
-
-.transfer-donation__note {
-  position: relative;
-  font-family: 'FormularLight';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 23px;
-  font-feature-settings: 'ss01' on;
-  color: #242424;
-  margin-top: 61px;
-  margin-bottom: 0;
-  padding: 0 0 58px 28px;
-  max-width: 345px;
-}
-
-
-.transfer-donation__note::before {
-  position: absolute;
-  top: -27px;
-  left: 1px;
-  content: "";
-  width: 25px;
-  height: 25px;
-  background-image: url(../img/asterisk.svg);
-}
-
-
-@media screen and (min-width: 869px) {
-  .transfer-donation__note {
-    margin-top: 122px;
-    margin-left: 32px;
-  }
-}
-
-
-.transfer-donation__form {
-  height: 524px;
-  background: #FFFFFF;
-}
-
-
-@media screen and (min-width: 869px) {
-  .transfer-donation__form {
-    height: 630px;
-  }
-}
-
-
-.about-donations {
-  width: 100%;
-  padding-top: 34px;
-  padding-bottom: 73px;
-}
-
-
-@media screen and (min-width: 869px) {
-  .about-donations {
-    padding-top: 34px;
-    padding-bottom: 146px;
-  }
-}
-
-
-.about-donations__title-wrapper {
-  display: flex;
-  flex-direction: column;
-}
-
-
-@media screen and (min-width: 1280px) {
-  .about-donations__title-wrapper {
-    flex-direction: row;
-    align-items: flex-end
-  }
-}
-
-
-@media screen and (min-width: 1280px) {
-  .about-donations__title-wrapper_in-reverse {
-    justify-content: space-between;
-  }
-}
-
-
-.about-donations__picture {
-  display: block;
-  object-fit: cover;
-  height: 200px;
-  min-width: 390px;
-}
-
-
-@media screen and (min-width: 768px) {
-  .about-donations__picture {
-    width: 54.17%;
-    max-width: 781px;
-    height: auto;
-    min-height: 200px;
-    max-height: 300px;
-  }
-}
-
-
-@media screen and (min-width: 1280px) {
-  .about-donations__picture {
-    padding: 0;
-  }
-}
-
-
-.about-donations__picture_position_right {
-  padding-left: 24px;
-  align-self: flex-end;
-  order: 0;
-}
-
-
-@media screen and (min-width: 1280px) {
-  .about-donations__picture_position_right {
-    order: 1;
-  }
-}
-
-
-.about-donations__picture_position_left {
-  padding-right: 24px;
-  align-self: flex-start;
-}
-
-
-.about-donations__title {
-  max-width: 485px;
-  font-family: 'Neue Machina';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 28px;
-  line-height: 32px;
-  letter-spacing: -0.01em;
-  color: #242424;
-  margin: 0;
-  padding: 42px 31px 0 24px;
-}
-
-
-.about-donations__title_position_left {
-  align-self: flex-start;
-}
-
-
-.about-donations__title_position_right {
-  align-self: flex-end;
-}
-
-
-@media screen and (min-width: 768px) {
-  .about-donations__title {
-    font-size: 40px;
-    line-height: 40px;
-  }
-}
-
-
-@media screen and (min-width: 1280px) {
-  .about-donations__title_position_left {
-    padding: 0 59px 5px 32px;
-    align-self: flex-end;
-  }
-
-
-  .about-donations__title_position_right {
-    padding: 0 32px 5px 36px;
-    align-self: flex-end;
-  }
-}
-
-
-.about-donations__card-wrapper {
-  display:grid;
-  grid-template-columns: repeat(auto-fill, minmax(237px, 1fr));
-  column-gap: 47px;
-  row-gap: 24px;
-  list-style-type: none;
-  margin: 0;
-  padding: 28px 24px 0 85px;
-}
-
-
-@media screen and (min-width: 869px) {
-  .about-donations__card-wrapper {
-    grid-template-columns: repeat(auto-fill, minmax(237px, 1fr));
-    row-gap: 72px;
-    padding: 71px 32px 0 32px;
-  }
-}
-
-
-@media screen and (min-width: 1153px) {
-  .about-donations__card-wrapper {
-    row-gap: 119px;
-  }
-}
-
-
-.about-donations__card {
-  font-family: 'FormularLight';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 23px;
-  font-feature-settings: 'ss01' on;
-  color: #242424;
-}
-
-
-@media screen and (min-width: 869px) {
-  .about-donations__card {
-    font-family: 'Neue Machina';
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-    font-feature-settings: normal;
-    letter-spacing: -0.01em;
-  }
-}
-
-
-.accounting {
-  width: 100%;
-  padding-bottom: 100px;
-}
-
-
-@media screen and (min-width: 869px) {
-  .accounting {
-    padding-bottom: 204px;
-  }
-}
-
-
-.accounting__title {
-  font-family: 'Neue Machina';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 28px;
-  line-height: 32px;
-  letter-spacing: -0.01em;
-  color: #242424;
-  margin: 0;
-  padding: 73px 24px 0 26px;
-}
-
-
-@media screen and (min-width: 869px) {
-  .accounting__title {
-    max-width: 873px;
-    font-size: 36px;
-    line-height: 38px;
-    padding-top: 71px;
-    padding-left: calc(268px - (1440px - 100vw)/2.45);
-  }
-}
-
-
-@media screen and (min-width: 1440px) {
-  .accounting__title {
-    padding-left: 268px;
-  }
-}
-
-
-.accounting__mail-link {
-  color: inherit;
-}
+@import url(../blocks/page/page.css);
+@import url(../blocks/main/main.css);
+/*HEADER*/
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__container/header__container.css);
+@import url(../blocks/header/__logo-link/header__logo-link.css);
+@import url(../blocks/header/__logo/header__logo.css);
+@import url(../blocks/header/__logo/_opened-menu/header__logo_opened-menu.css);
+@import url(../blocks/header/__burger/header__burger.css);
+@import url(../blocks/burger/burger.css);
+@import url(../blocks/burger/_close/burger_close.css);
+@import url(../blocks/burger/__line/burger__line.css);
+
+@import url(../blocks/header/__menu-wrapper/header__menu-wrapper.css);
+@import url(../blocks/header/__menu-wrapper/_visible/header__menu-wrapper_visible.css);
+@import url(../blocks/header/__navigation/header__navigation.css);
+@import url(../blocks/header/__menu/header__menu.css);
+@import url(../blocks/header/__menu-link/header__menu-link.css);
+@import url(../blocks/header/__menu-link/_hidden/header__menu-link_hidden.css);
+@import url(../blocks/header/__menu-link/_active/header__menu-link_active.css);
+@import url(../blocks/header/__menu-link/_disabled/header__menu-link_disabled.css);
+
+@import url(../blocks/header/__link-wrapper/header__link-wrapper.css);
+@import url(../blocks/header/__link/header__link.css);
+@import url(../blocks/header/__link/_hidden/header__link_hidden.css);
+@import url(../blocks/header/__link-text/header__link-text.css);
+@import url(../blocks/header/__link-icon/header__link-icon.css);
+@import url(../blocks/header/__link-icon/_changed/header__link-icon_changed.css);
+
+@import url(../blocks/header/__social/header__social.css);
+@import url(../blocks/header/__social-item/header__social-item.css);
+@import url(../blocks/header/__social-item/_wided/header__social-item_wided.css);
+@import url(../blocks/header/__social-link/header__social-link.css);
+
+@import url(../blocks/header/__info/header__info.css);
+@import url(../blocks/header/__info-text/header__info-text.css);
+@import url(../blocks/header/__designers/header__designers.css);
+/*MAIN*/
+@import url(../blocks/content-donation/content-donation.css);
+@import url(../blocks/transfer-donation/transfer-donation.css);
+@import url(../blocks/transfer-donation/__title/transfer-donation__title.css);
+@import url(../blocks/transfer-donation/__paragraph/transfer-donation__paragraph.css);
+@import url(../blocks/transfer-donation/__note/transfer-donation__note.css);
+@import url(../blocks/transfer-donation/__form/transfer-donation__form.css);
+@import url(../blocks/about-donations/about-donations.css);
+@import url(../blocks/about-donations/__title-wrapper/about-donations__title-wrapper.css);
+@import url(../blocks/about-donations/__title-wrapper/_in-reverse/about-donations__title-wrapper_in-reverse.css);
+@import url(../blocks/about-donations/__picture/about-donations__picture.css);
+@import url(../blocks/about-donations/__picture/_position_right/about-donations__picture_position_right.css);
+@import url(../blocks/about-donations/__picture/_position_left/about-donations__picture_position_left.css);
+@import url(../blocks/about-donations/__title/about-donations__title.css);
+@import url(../blocks/about-donations/__title/_position_left/about-donations__title_position_left.css);
+@import url(../blocks/about-donations/__title/_position_right/about-donations__title_position_right.css);
+@import url(../blocks/about-donations/__card-wrapper/about-donations__card-wrapper.css);
+@import url(../blocks/about-donations/__card/about-donations__card.css);
+@import url(../blocks/accounting/accounting.css);
+@import url(../blocks/accounting/__title/accounting__title.css);
+@import url(../blocks/accounting/__mail-link/accounting__mail-link.css);
+/*FOOTER*/
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__logo/footer__logo.css);
+@import url(../blocks/footer/__address-name/footer__address-name.css);
+@import url(../blocks/footer/__address-place/footer__address-place.css);
+@import url(../blocks/footer/__address/footer__address.css);
+@import url(../blocks/footer/__navigation/footer__navigation.css);
+@import url(../blocks/footer/__lists/footer__lists.css);
+@import url(../blocks/footer/__items/footer__items.css);
+@import url(../blocks/footer/__list/footer__list.css);
+@import url(../blocks/footer/__item/footer__item.css);
+@import url(../blocks/footer/__link/footer__link.css);
+@import url(../blocks/footer/__partners/footer__partners.css);
+@import url(../blocks/footer/__company/footer__company.css);
+@import url(../blocks/footer/__company-logo/footer__company-logo.css);
+@import url(../blocks/footer/__company-name/footer__company-name.css);
+@import url(../blocks/footer/__company-name/_type/footer__company-name_type_top-margin.css);
+@import url(../blocks/footer/__separation/footer__separation.css);
+@import url(../blocks/footer/__info/footer__info.css);
+@import url(../blocks/footer/__container/footer__container.css);
+@import url(../blocks/footer/__confidentiality/footer__confidentiality.css);
+@import url(../blocks/footer/__confidentiality/_type/footer__confidentiality_type_margin.css);
+@import url(../blocks/footer/__design/footer__design.css);
+@import url(../blocks/footer/__author/footer__author.css);
+@import url(../blocks/footer/__author/_type/footer__author_type_margin.css);
+@import url(../blocks/footer/__author/_type/footer__author_type_size.css);
+@import url(../blocks/footer/__partners-title/footer__partners-title.css);

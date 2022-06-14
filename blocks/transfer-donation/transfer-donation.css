@@ -1,0 +1,27 @@
+.transfer-donation {
+  align-self:center;
+  display: grid;
+  grid-template-columns: minmax(366px, 629px);
+  box-sizing: border-box;
+  padding: 0 23px 24px;
+  max-width: 1440px;
+}
+
+
+@media screen and (min-width: 869px) {
+  .transfer-donation {
+    align-self:flex-end;
+    display: grid;
+    grid-template-columns: minmax(366px, 629px) minmax(366px, 600px);
+    column-gap: 61px;
+    padding: 24px 30px 81px;
+  }
+}
+
+
+@media screen and (min-width: 1441px) {
+  .transfer-donation {
+    align-self: center;
+    padding-left: 120px;
+  }
+}
