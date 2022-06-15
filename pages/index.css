@@ -73,6 +73,13 @@
 @import url(../blocks/card/__city/card__city.css);
 @import url(../blocks/card/__year/card__year.css);
 
+/*GALLERY*/
+@import url(../blocks/gallery/gallery.css);
+@import url(../blocks/gallery/__image/gallery__image.css);
+@import url(../blocks/gallery/__item/gallery__item.css);
+@import url(../blocks/gallery/__wrapper/gallery__wrapper.css);
+@import url(../blocks/gallery/__title/gallery__title.css);
+
 /* footer */
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__logo/footer__logo.css);
