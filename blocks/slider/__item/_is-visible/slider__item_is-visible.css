@@ -3,4 +3,11 @@
   flex-direction: column;
   justify-content: space-between;
   visibility: visible;
+  position: relative;
+  width: 100%;
+  /* -webkit-transform: translate(300px);
+	-moz-transform: translate(300px);
+	-ms-transform: translate(300px);
+	-o-transform: translate(300px); */
+	/* transform: translate(420px); */
 }

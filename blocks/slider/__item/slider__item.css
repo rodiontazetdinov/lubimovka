@@ -2,16 +2,23 @@
   background: #fff;
   padding: 72px 27px 100px;
   visibility: hidden;
-  width: 100%;
-  display: none;
+  /* width: 100%; */
+  /* display: none; */
+  position: absolute;
   box-sizing: border-box;
+  /* -webkit-transition:all 1.5s ease-in 0s;
+	-moz-transition: all 1.5s ease-in 0s;
+	-o-transition: all 1.5s ease-in 0s; */
+	/* transition: position 1.5s ease-in 0s; */
+  margin-right: 15px;
+  margin-left: 15px;
 }
 
 @media screen and (min-width: 910px) {
   .slider__item {
     padding-top: 33px;
     padding-bottom: 24px;
-    min-width: 400px;
+    /* min-width: 400px; */
     max-width: 420px;
   }
 }
