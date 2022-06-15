@@ -4,7 +4,6 @@ import Pagination from './Pagination.js';
 
 const cardTemplate = '.top-slider-template'
 const containerForSliderTop = document.querySelector('.reviews__slider')
-const navigationWidth = document.querySelector('.reviews__head').offsetWidth
 let containerForSliderTopPagination
 const buttonBack = document.querySelector('.reviews__button_type_back')
 const buttonNext = document.querySelector('.reviews__button_type_next')

@@ -1,5 +1,3 @@
-
-
 export default function Pagination(templateElement, i, handleChangePagination) {
   const template = document.querySelector(templateElement).content.cloneNode(true)
   let element = template.querySelector('.reviews__item')

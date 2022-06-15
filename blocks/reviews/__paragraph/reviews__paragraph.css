@@ -1,4 +1,4 @@
-.reviews__paragraph{
+.reviews__paragraph {
   font-weight: 300;
   font-size: 20px;
   line-height: 28px;
@@ -9,11 +9,10 @@
   color: #242424;
 }
 
-@media all and (max-width: 768px){
-  .reviews__paragraph{
+@media all and (max-width: 768px) {
+  .reviews__paragraph {
     font-weight: 300;
     font-size: 20px;
     line-height: 28px;
-
   }
 }

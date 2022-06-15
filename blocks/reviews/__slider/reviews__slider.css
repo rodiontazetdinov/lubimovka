@@ -1,12 +1,10 @@
-.reviews__slider{
+.reviews__slider {
   margin: 0;
   padding: 0;
   display: flex;
-  gap:30px;
+  gap: 30px;
   transition: all ease 2s;
-  /*width: max-content;*/
   width: 100%;
   right: 0;
   position: relative
 }
-

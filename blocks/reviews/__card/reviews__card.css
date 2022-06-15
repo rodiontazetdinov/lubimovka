@@ -6,7 +6,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /*height: 50%;*/
   background-color: #fff;
   padding: 55px 89px 72px 89px;
   transition: all 0.5s ease-in-out;
