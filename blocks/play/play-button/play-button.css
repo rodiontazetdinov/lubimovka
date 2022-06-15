@@ -8,9 +8,10 @@
 
 .play-button:hover {
   background-size: 100% 100%;
-  color: #fff;
+  color: var(--white);
   transition: .5s;
 }
+
 .play-button:hover > .play-button__img_type-ticket{
   background-image: url(../../../img/icon_arrow-right_white.svg);
 }

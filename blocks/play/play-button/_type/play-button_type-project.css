@@ -7,18 +7,18 @@
     width: 115px;
     height: 32px;
     background-color: transparent;
-    border: 1px solid #242424;
+    border: 1px solid var(--black);
     border-left: transparent;
     border-top: transparent;
     line-height: 14px;
-    background-image: linear-gradient(black, black);
+    background-image: linear-gradient(var(--black), var(--black));
     background-position: 100% 0%;
     background-repeat: no-repeat;
     background-size: 0% 100%;
     transition: background-size .5s, color;
 }
 
-@media (min-width: 768px) and (max-width: 2560px) {
+@media screen and (min-width: 768px) {
   .play-button_type-project {
     margin: 33px auto 0 40px;
     width: 120px;
