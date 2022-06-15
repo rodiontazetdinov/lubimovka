@@ -3,7 +3,6 @@
 @import url(../vendor/fonts/NeueMachinaRegular/PPNeueMachina-Regular.css);
 @import url(../variables/variables.css);
 @import url(../blocks/page/page.css);
-@import url(../blocks/main/main.css);
 
 /*HEADER*/
 @import url(../blocks/header/header.css);
@@ -54,24 +53,50 @@
 @import url(../blocks/video/__video/video__video.css);
 @import url(../blocks/video/__iframe/video__iframe.css);
 @import url(../blocks/btnPlay/btn-play.css);
-
 @import url(../blocks/video/__description/video__description.css);
 @import url(../blocks/video/__text/video__text.css);
-
 @import url(../blocks/reading/__title/reading__title.css);
 @import url(../blocks/reading/__card/reading__card.css);
-
 @import url(../blocks/btnBig/btn-big.css);
 @import url(../blocks/btnBig/__icon/btn-big__icon.css);
 @import url(../blocks/btnBig/__icon/_type/btn-big__icon_type_watch.css);
 @import url(../blocks/btnBig/__icon/_type/btn-big__icon_type_download.css);
-
 @import url(../blocks/card/card.css);
 @import url(../blocks/card/__title/card__title.css);
 @import url(../blocks/card/__author/card__author.css);
 @import url(../blocks/card/__surname/card__surname.css);
 @import url(../blocks/card/__city/card__city.css);
 @import url(../blocks/card/__year/card__year.css);
+
+/*reviews*/
+@import url(../blocks/reviews/reviews.css);
+@import url(../blocks/reviews/__wrapper/reviews__wrapper.css);
+@import url(../blocks/reviews/__top/reviews__top.css);
+@import url(../blocks/reviews/__head/reviews__head.css);
+@import url(../blocks/reviews/__button/reviews__button.css);
+@import url(../blocks/reviews/__button/_back/reviews__button_type_back.css);
+@import url(../blocks/reviews/__button/_next/reviews__button_type_next.css);
+@import url(../blocks/reviews/__buttons/reviews__buttons.css);
+@import url(../blocks/reviews/__image/_rotate/reviews__image_type_rotate-right.css);
+@import url(../blocks/reviews/__item/reviews__item.css);
+@import url(../blocks/reviews/__item/_active/reviews__item_active.css);
+@import url(../blocks/reviews/__pagination/reviews__pagination.css);
+@import url(../blocks/reviews/__title/reviews__title.css);
+@import url(../blocks/reviews/__navigation/reviews__navigation.css);
+@import url(../blocks/reviews/__roll/reviews__roll.css);
+@import url(../blocks/reviews/__roll/_next/reviews__roll_type_next.css);
+@import url(../blocks/reviews/__slider/reviews__slider.css);
+@import url(../blocks/reviews/__card/reviews__card.css);
+@import url(../blocks/reviews/__card-title/reviews__card-title.css);
+@import url(../blocks/reviews/__paragraph/reviews__paragraph.css);
+@import url(../blocks/reviews/__full-screen/reviews__full-screen.css);
+@import url(../blocks/reviews/__read-paragraph/reviews__read-paragraph.css);
+@import url(../blocks/reviews/_inactive/reviews_inactive.css);
+@import url(../blocks/reviews/_disabled/reviews__button_disabled.css);
+@import url(../blocks/reviews/__point/reviews__point.css);
+@import url(../blocks/reviews/__pagination-radio/reviews__pagination-radio.css);
+@import url(../blocks/reviews/__pagination-radio/_min/reviews__pagination-radio_min.css);
+@import url(../blocks/main/main.css);
 
 /* footer */
 @import url(../blocks/footer/footer.css);

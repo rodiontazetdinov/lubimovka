@@ -1,0 +1,8 @@
+.reviews__pagination-radio_min {
+  padding: 32px 0 0 29px;
+  margin: 0;
+  position: relative;
+  left: 0;
+  top: 40px;
+  z-index: 100;
+}

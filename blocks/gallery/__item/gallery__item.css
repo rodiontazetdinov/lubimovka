@@ -1,0 +1,17 @@
+.gallery__item {
+  min-width: 24%;
+  flex: 1;
+}
+
+
+@media all and (max-width:1000px) {
+  .gallery__item {
+    min-width: 33%;
+  }
+}
+
+@media all and (max-width:700px) {
+  .gallery__item {
+    min-width: 49%;
+  }
+}
