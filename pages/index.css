@@ -2,8 +2,6 @@
 @import url(../vendor/fonts/FormularLight/formular-light.css);
 @import url(../vendor/fonts/NeueMachinaRegular/PPNeueMachina-Regular.css);
 @import url(../variables/variables.css);
-@import url(../blocks/page/page.css);
-@import url(../blocks/main/main.css);
 
 /*HEADER*/
 @import url(../blocks/header/header.css);
@@ -40,6 +38,22 @@
 @import url(../blocks/header/__info/header__info.css);
 @import url(../blocks/header/__info-text/header__info-text.css);
 @import url(../blocks/header/__designers/header__designers.css);
+/*PLAY*/
+@import url(../blocks/page/page.css);
+@import url(../blocks/play/play-button/play-button.css);
+@import url(../blocks/play/play-button/_type/play-button_type-project.css);
+@import url(../blocks/play/play-button/__text/play-button__text.css);
+@import url(../blocks/play/play-button/__img/play-button__img.css);
+@import url(../blocks/play/play-button/__img/_type/play-button__img_type-project.css);
+@import url(../blocks/play/play-button/__img/_type/play-button__img_type-ticket.css);
+@import url(../blocks/play/play-button/_type/play-button_type-ticket.css);
+@import url(../blocks/play/play.css);
+@import url(../blocks/play/__title/play__title.css);
+@import url(../blocks/play/__about/play__about.css);
+@import url(../blocks/play/__schedule/play__sсhedule.css);
+@import url(../blocks/play/__image/play__image.css);
+@import url(../blocks/play/__text/play__text.css);
+@import url(../blocks/main/main.css);
 
 /*VIDEO*/
 @import url(../blocks/video/video.css);

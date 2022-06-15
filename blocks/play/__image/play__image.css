@@ -1,0 +1,23 @@
+.play__image {
+    padding: 0;
+    margin: 38px auto 0 auto;
+    width: 100%;
+    max-height: auto;
+}
+
+@media (min-width: 415px) and (max-width: 767px) {
+  .play__image {
+     max-width: 90%;
+     margin-left: 5%;
+     margin-right: 5%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .play__image {
+    grid-area: play__image;
+    margin-top: 95px;
+    max-width: 720px;
+    object-fit: cover;
+  }
+}
