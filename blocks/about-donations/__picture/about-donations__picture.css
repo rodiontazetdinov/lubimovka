@@ -1,0 +1,24 @@
+.about-donations__picture {
+  display: block;
+  object-fit: cover;
+  height: 200px;
+  min-width: 390px;
+}
+
+
+@media screen and (min-width: 768px) {
+  .about-donations__picture {
+    width: 54.17%;
+    max-width: 781px;
+    height: auto;
+    min-height: 200px;
+    max-height: 300px;
+  }
+}
+
+
+@media screen and (min-width: 1280px) {
+  .about-donations__picture {
+    padding: 0;
+  }
+}

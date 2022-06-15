@@ -1,0 +1,12 @@
+.accounting {
+  width: 100%;
+  padding-bottom: 3px;
+  max-width: 1440px;
+}
+
+
+@media screen and (min-width: 869px) {
+  .accounting {
+    padding-bottom: 71px;
+  }
+}
