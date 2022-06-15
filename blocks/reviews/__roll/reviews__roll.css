@@ -1,0 +1,15 @@
+.reviews__roll {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  opacity: .4;
+  transition: all .3s ease;
+}
+
+.reviews__roll:hover {
+  transform: rotate(180deg);
+  opacity: 1;
+}

@@ -1,0 +1,11 @@
+.reviews__item {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid #242424;
+  transition: background-color .5s ease-in;
+}
+
+.reviews__item:hover {
+  cursor: pointer;
+}

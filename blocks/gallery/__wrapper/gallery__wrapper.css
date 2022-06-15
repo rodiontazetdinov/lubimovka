@@ -1,0 +1,15 @@
+.gallery__wrapper {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  gap: 1px;
+  flex-wrap: wrap;
+  object-fit: contain;
+  align-items: stretch;
+
+}
+
+/* .gallery__wrapper>.gallery__item {
+  flex: 1;
+} */
