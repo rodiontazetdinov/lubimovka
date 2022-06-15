@@ -1,0 +1,21 @@
+.play__text {
+    padding: 0;
+    margin: 56px auto 0 auto;
+    margin-left: 7.5%;
+    max-width: 87.5%;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 24px;
+    font-family: 'Neue Machina';
+}
+
+@media screen and (min-width: 768px) {
+  .play__text {
+    font-size: 28px;
+    line-height: 32px;
+    margin-top: 48px;
+    margin-right: 130px;
+    grid-area: play__text;
+  }
+}
