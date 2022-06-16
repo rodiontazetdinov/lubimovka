@@ -1,0 +1,12 @@
+.about-donations__title-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media screen and (min-width: 1280px) {
+  .about-donations__title-wrapper {
+    flex-direction: row;
+    align-items: flex-end
+  }
+}

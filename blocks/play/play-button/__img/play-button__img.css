@@ -1,0 +1,11 @@
+.play-button__img {
+  padding: 0;
+  margin: 0 0 0 5px;
+  align-self: center;
+  width: 21px;
+  height: 13px;
+  background-image: url(../../../img/arrow-left.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  transition: .5s;
+}

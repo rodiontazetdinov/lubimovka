@@ -1,0 +1,14 @@
+.about-donations {
+  width: 100%;
+  padding-top: 34px;
+  padding-bottom: 73px;
+  max-width: 1440px;
+}
+
+
+@media screen and (min-width: 869px) {
+  .about-donations {
+    padding-top: 34px;
+    padding-bottom: 146px;
+  }
+}

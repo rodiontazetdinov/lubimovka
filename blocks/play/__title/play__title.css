@@ -1,0 +1,37 @@
+.play__title {
+  padding: 0;
+  margin: 58px 67px 0 24px;
+  margin-left: 7.5%;
+  min-width: 71.56%;
+  max-height: 70px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  font-family: 'Neue Machina';
+}
+
+@media screen and (min-width: 415px) {
+  .play__title {
+    font-size: 43px;
+    line-height: 46px;
+    margin-top: 92px;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .play__title {
+    grid-area: play__title;
+    width: calc(100%/2);
+    font-size: 5vw;
+    line-height: 72px;
+    margin-left: 120px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .play__title {
+    width: 540px;
+    font-size: 70px;
+  }
+}

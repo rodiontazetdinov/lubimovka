@@ -1,0 +1,25 @@
+.about-donations__card-wrapper {
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(237px, 1fr));
+  column-gap: 47px;
+  row-gap: 24px;
+  list-style-type: none;
+  margin: 0;
+  padding: 28px 24px 0 85px;
+}
+
+
+@media screen and (min-width: 869px) {
+  .about-donations__card-wrapper {
+    grid-template-columns: repeat(auto-fill, minmax(237px, 1fr));
+    row-gap: 72px;
+    padding: 71px 32px 0 32px;
+  }
+}
+
+
+@media screen and (min-width: 1153px) {
+  .about-donations__card-wrapper {
+    row-gap: 119px;
+  }
+}

@@ -1,0 +1,29 @@
+.accounting__title {
+  font-family: 'Neue Machina';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: -0.01em;
+  color: #242424;
+  margin: 0;
+  padding: 73px 24px 0 26px;
+}
+
+
+@media screen and (min-width: 869px) {
+  .accounting__title {
+    max-width: 873px;
+    font-size: 36px;
+    line-height: 38px;
+    padding-top: 71px;
+    padding-left: calc(268px - (1440px - 100vw)/2.45);
+  }
+}
+
+
+@media screen and (min-width: 1440px) {
+  .accounting__title {
+    padding-left: 268px;
+  }
+}
