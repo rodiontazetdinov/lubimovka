@@ -16,8 +16,22 @@
   line-height: 14px;
   letter-spacing: normal;
   padding-right: 8px;
+  background-image: linear-gradient(var(--black), var(--black));
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: background-size 0.5s, color;
 }
 .feedback__link:hover {
   cursor: pointer;
-  color: var(--black);
+  background-size: 100% 100%;
+  color: var(--white);
+  transition: 0.5s;
+}
+.feedback__link:hover > .feedback__button {
+  background-image: url("../../../img/icon_arrow-right_white.svg");
+}
+.feedback__link:active {
+  transform: scale(1.1);
+  transition: 0.5s;
 }
