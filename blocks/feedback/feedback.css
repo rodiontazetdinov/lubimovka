@@ -1,0 +1,14 @@
+.feedback {
+  min-height: 437px;
+  background: var(--background);
+  width: 100%;
+}
+@media screen and (min-width: 1440px) {
+  .feedback {
+    min-height: 605px;
+    max-width: 1440px;
+    box-sizing: border-box;
+    padding: 64px 60px 0;
+    margin: 0 auto;
+  }
+}

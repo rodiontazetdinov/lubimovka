@@ -1,0 +1,14 @@
+.feedback__social {
+  display: grid;
+  column-gap: 8px;
+  grid-template-columns: repeat(auto-fit, minmax(53px, max-content));
+  grid-auto-rows: 25px;
+}
+@media screen and (min-width: 768px)  {
+  .feedback__social {
+    position: absolute;
+    left: 221px;
+    top: -17px;
+    grid-template-columns: repeat(3, minmax(53px, max-content));
+  }
+}
