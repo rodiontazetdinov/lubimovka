@@ -19,57 +19,57 @@ function createSlide(author, text) {
   return element;
 }
 
-function fillSlideList() {
-  const sliderItems = Array.from(sliderList.querySelectorAll('.slider__item'));
-  deactivateSlides(sliderItems);
-  activateSlides(sliderItems);
-  console.log(testConfig());
-}
+// function fillSlideList() {
+//   const sliderItems = Array.from(sliderList.querySelectorAll('.slider__item'));
+//   deactivateSlides(sliderItems);
+//   activateSlides(sliderItems);
+//   console.log(testConfig());
+// }
 
-function deactivateSlides(sliderItems) {
-  sliderItems.forEach((slide, idx) => {
-    if (slide.classList.contains('slider__item_is-visible')) {
-      slide.classList.remove('slider__item_is-visible');
-      console.log(`deactivated ${idx}`);
-    }
-  });
-}
+// function deactivateSlides(sliderItems) {
+//   sliderItems.forEach((slide, idx) => {
+//     if (slide.classList.contains('slider__item_is-visible')) {
+//       slide.classList.remove('slider__item_is-visible');
+//       console.log(`deactivated ${idx}`);
+//     }
+//   });
+// }
 
-function activateSlides(sliderItems) {
-  sliderItems.forEach((slide, idx) => {
-    if (sliderConfig.slidesWindow.indexOf(idx) > -1) {
-      slide.classList.add('slider__item_is-visible');
-      console.log(`activated ${idx}`);
-    }
-  });
-}
+// function activateSlides(sliderItems) {
+//   sliderItems.forEach((slide, idx) => {
+//     if (sliderConfig.slidesWindow.indexOf(idx) > -1) {
+//       slide.classList.add('slider__item_is-visible');
+//       console.log(`activated ${idx}`);
+//     }
+//   });
+// }
 
-function handleBtnState () {
-  const firstSlide = 0;
-  const lastSlide = sliderConfig.lastSlidePosition;
-  sliderConfig.slidesWindow.forEach((item) => {
-    if (item == firstSlide) {
-      disableBtn(leftArrowBtn);
-      activateBtn(rightArrowBtn);
-    } else if (item == lastSlide) {
-      disableBtn(rightArrowBtn);
-      activateBtn(leftArrowBtn);
-    }
-  });
-}
+// function handleBtnState () {
+//   const firstSlide = 0;
+//   const lastSlide = sliderConfig.lastSlidePosition;
+//   sliderConfig.slidesWindow.forEach((item) => {
+//     if (item == firstSlide) {
+//       disableBtn(leftArrowBtn);
+//       activateBtn(rightArrowBtn);
+//     } else if (item == lastSlide) {
+//       disableBtn(rightArrowBtn);
+//       activateBtn(leftArrowBtn);
+//     }
+//   });
+// }
 
-function testConfig() {
-  console.log(`
-  ---------------------------
-  окно
-  ${sliderConfig.slidesWindow}
-  количество слайдов
-  ${sliderConfig.slidesCount}
-  первый слайд
-  ${sliderConfig.firstSlidePosition}
-  ---------------------------
-  `);
-}
+// function testConfig() {
+//   console.log(`
+//   ---------------------------
+//   окно
+//   ${sliderConfig.slidesWindow}
+//   количество слайдов
+//   ${sliderConfig.slidesCount}
+//   первый слайд
+//   ${sliderConfig.firstSlidePosition}
+//   ---------------------------
+//   `);
+// }
 
 
 
@@ -83,29 +83,118 @@ function fillStartSlideList() {
   });
 }
 
-function fillWindow(firstSlidePosition) {
+// function fillWindow(firstSlidePosition) {
 
-  console.log(firstSlidePosition, 'первая позиция передали в fillWindow');
-  //((sliderConfig.slidesWindow.indexOf(sliderConfig.lastSlidePosition) > -1) && ((sliderConfig.lastSlidePosition + 1) >= 0))
+//   console.log(firstSlidePosition, 'первая позиция передали в fillWindow');
+//   //((sliderConfig.slidesWindow.indexOf(sliderConfig.lastSlidePosition) > -1) && ((sliderConfig.lastSlidePosition + 1) >= 0))
 
-  // if (sliderConfig.slidesWindow.indexOf(sliderConfig.lastSlidePosition) > -1) {
-  //   firstSlidePosition = (sliderConfig.lastSlidePosition + 1) - sliderConfig.slidesCount; //ЗАТЫК ВОТ ТУТ. Когда присутствует последняя карточка. Какое условие нужно поставить, чтобы ограничить срабатывание.
-  //   console.log(firstSlidePosition, 'если последний слайд есть в окне, то первая позиция будет последняя минус кол-во слайдов');
- // } else
-  if (firstSlidePosition - sliderConfig.slidesCount < 0) {
-    firstSlidePosition = 0;
-    console.log(firstSlidePosition, 'если последней позиции в окне нет, и первая позиция минус кол-во слайдов < 0, то первая позиция будет 0');
+//   // if (sliderConfig.slidesWindow.indexOf(sliderConfig.lastSlidePosition) > -1) {
+//   //   firstSlidePosition = (sliderConfig.lastSlidePosition + 1) - sliderConfig.slidesCount; //ЗАТЫК ВОТ ТУТ. Когда присутствует последняя карточка. Какое условие нужно поставить, чтобы ограничить срабатывание.
+//   //   console.log(firstSlidePosition, 'если последний слайд есть в окне, то первая позиция будет последняя минус кол-во слайдов');
+//  // } else
+//   if (firstSlidePosition - sliderConfig.slidesCount < 0) {
+//     firstSlidePosition = 0;
+//     console.log(firstSlidePosition, 'если последней позиции в окне нет, и первая позиция минус кол-во слайдов < 0, то первая позиция будет 0');
+//   }
+
+//   sliderConfig.slidesWindow = [];
+//   for (let i = firstSlidePosition; i < (firstSlidePosition + sliderConfig.slidesCount); i++) {
+//     console.log(firstSlidePosition, ' for позиция начала передачи в окно');
+//     sliderConfig.slidesWindow.push(i);
+//     console.log(i, 'for то что передается в окно');
+//   }
+
+//   handleBtnState();
+//   console.log('fillWindow');
+// }
+
+// function disableBtn(btn) {
+//   btn.classList.add('slider__button_inactive');
+//   btn.setAttribute('disabled', 'disabled');
+// }
+// function activateBtn(btn) {
+//   btn.classList.remove('slider__button_inactive');
+//   btn.removeAttribute('disabled');
+// }
+
+// function countSlides() {
+//   sliderConfig.slidesCount = (Math.floor(window.innerWidth / 420) < 4) ? Math.floor(window.innerWidth / 420) : 3;
+// }
+function sayTest() {
+  console.log(sliderConfig.firstSlidePosition, 'first');
+  console.log(sliderConfig.slidesWindow, 'window');
+}
+
+function slideNext () {
+  sayTest();
+  setFirstSlidePosition('forward');
+  fillSliderWindow();
+  fillSlideList();
+  handleArrowsState();
+  sayTest();
+}
+
+function slidePrevious () {
+  sayTest();
+  setFirstSlidePosition('back');
+  fillSliderWindow();
+  fillSlideList();
+  handleArrowsState();
+  sayTest();
+}
+
+function setFirstSlidePosition (scenario) {
+  switch (scenario) {
+    case 'forward':
+      if (stepForward() > sliderConfig.lastSlidePosition) {
+        sliderConfig.firstSlidePosition = sliderConfig.lastSlidePosition + 1 - sliderConfig.slidesCount;
+      } else {
+        sliderConfig.firstSlidePosition += sliderConfig.slidesCount;
+      }
+      break;
+    case 'back':
+      if (stepBack() < 0) {
+        sliderConfig.firstSlidePosition = 0;
+      } else {
+        sliderConfig.firstSlidePosition -= sliderConfig.slidesCount;
+      }
+      break;
+    case 'update':
+      if (sliderConfig.slidesCount > sliderConfig.slidesWindow.length) {
+        setFirstSlidePosition('forward');
+      } else if (sliderConfig.slidesCount < sliderConfig.slidesWindow.length) {
+        setFirstSlidePosition('forward');
+      }
+      break;
+    default:
+      sliderConfig.firstSlidePosition = 0;
   }
+}
 
-  sliderConfig.slidesWindow = [];
-  for (let i = firstSlidePosition; i < (firstSlidePosition + sliderConfig.slidesCount); i++) {
-    console.log(firstSlidePosition, ' for позиция начала передачи в окно');
-    sliderConfig.slidesWindow.push(i);
-    console.log(i, 'for то что передается в окно');
+function stepForward () {
+  return sliderConfig.firstSlidePosition + sliderConfig.slidesCount;
+}
+
+function stepBack () {
+  return sliderConfig.firstSlidePosition - sliderConfig.slidesCount;
+}
+
+function handleArrowsState () {
+  console.log('handleArrowsState');
+  if (sliderConfig.slidesWindow.indexOf(0) > -1) {
+    console.log('index 0 есть');
+    console.log(sliderConfig.slidesWindow.indexOf(0));
+    disableBtn(leftArrowBtn);
+    activateBtn(rightArrowBtn);
+  } else if (sliderConfig.slidesWindow.indexOf(sliderConfig.lastSlidePosition) > -1) {
+    console.log('index 5 есть');
+    console.log(sliderConfig.slidesWindow.indexOf(sliderConfig.lastSlidePosition));
+    disableBtn(rightArrowBtn);
+    activateBtn(leftArrowBtn);
+  } else {
+    activateBtn(leftArrowBtn);
+    activateBtn(rightArrowBtn);
   }
-
-  handleBtnState();
-  console.log('fillWindow');
 }
 
 function disableBtn(btn) {
@@ -117,81 +206,105 @@ function activateBtn(btn) {
   btn.removeAttribute('disabled');
 }
 
+function updateSliderWindow () {
+  countSlides();
+  // setFirstSlidePosition('update');
+  fillSliderWindow();
+  handleArrowsState();
+}
+
 function countSlides() {
+  sliderConfig.slidesCount = (Math.floor(sliderConfig.innerWidth / 420) < 4) ? Math.floor(window.innerWidth / 420) : 3;
+}
+
+function fillSliderWindow () {
+  sliderConfig.slidesWindow = [];
+  for (let i = sliderConfig.firstSlidePosition; i < (sliderConfig.firstSlidePosition + sliderConfig.slidesCount); i++) {
+    sliderConfig.slidesWindow.push(i);
+  }
+}
+
+function updateSlider () {
+  // console.log('я сработал (updateSlider');
+  sayTest();
+  handleArrowsState();
+  updateSliderWindow();
+  fillSlideList();
+  sayTest();
+
+  // тут мы добавляем классы нужным слайдам из окошка
+}
+
+function countSlides() {
+
+  if (window.innerWidth < 830) {
+    sliderConfig.slidesCount = 1;
+  } else if (window.innerWidth > 1260) {
+    sliderConfig.slidesCount = 3;
+  } else {
+    sliderConfig.slidesCount = 2;
+  }
   sliderConfig.slidesCount = (Math.floor(window.innerWidth / 420) < 4) ? Math.floor(window.innerWidth / 420) : 3;
 }
 
-function slideNext () {
-  setFirstSlidePosition('back');
-    if ((sliderConfig.firstSlidePosition + sliderConfig.slidesCount) <= 5) { //если в диапазоне до 5 включительно
-      sliderConfig.firstSlidePosition += sliderConfig.slidesCount;
-    } else if (sliderConfig.slidesWindow.indexOf(sliderConfig.lastSlidePosition) > -1) {
-      sliderConfig.firstSlidePosition = (sliderConfig.lastSlidePosition + 1) - sliderConfig.slidesCount; //ЗАТЫК ВОТ ТУТ. Когда присутствует последняя карточка. Какое условие нужно поставить, чтобы ограничить срабатывание.
-      console.log(sliderConfig.firstSlidePosition, 'если последний слайд есть в окне, то первая позиция будет последняя минус кол-во слайдов');
+
+function deactivateSlides(sliderItems) {
+  sliderItems.forEach((slide, idx) => {
+    if (slide.classList.contains('slider__item_is-visible')) {
+      slide.classList.remove('slider__item_is-visible');
     }
-    //sliderConfig.firstSlidePosition += sliderConfig.slidesCount;
-
-    fillWindow(sliderConfig.firstSlidePosition);
-    fillSlideList();
-
-
-  //}
+  });
 }
 
-function slidePrevious () {
-  setFirstSlidePosition('forward');
-    if ((sliderConfig.firstSlidePosition - sliderConfig.slidesCount) >= 0) {
-      console.log('if');
-      sliderConfig.firstSlidePosition -= sliderConfig.slidesCount;
-    } else if ((sliderConfig.firstSlidePosition - sliderConfig.slidesCount) < 0) {
-      console.log('else if');
-      sliderConfig.firstSlidePosition = 0;
+function activateSlides(sliderItems) {
+  sliderItems.forEach((slide, idx) => {
+    if (sliderConfig.slidesWindow.indexOf(idx) > -1) {
+      slide.classList.add('slider__item_is-visible');
     }
-
-    //console.log('fillWindow');
-    fillWindow(sliderConfig.firstSlidePosition);
-    //console.log('fillSlideList');
-    fillSlideList();
-    //fillSlideList();
-
+  });
 }
 
-function updateSlider() {
-  setFirstSlidePosition('update');
+function fillSlideList() {
+  const sliderItems = Array.from(sliderList.querySelectorAll('.slider__item'));
+  deactivateSlides(sliderItems);
+  activateSlides(sliderItems);
 }
+// function updateSlider() {
+//   setFirstSlidePosition('update');
+// }
 
-function setFirstSlidePosition (scenario) {
-  // switch (scenario) {
-  //   case 'forward':
-  //     if (checkForward()) {
+// function setFirstSlidePosition (scenario) {
+//   // switch (scenario) {
+//   //   case 'forward':
+//   //     if (checkForward()) {
 
-  //     } else {
-  //       sliderConfig.firstSlidePosition += sliderConfig.slides;
-  //     }
-  //     break;
-  //   case 'back':
-  //     alert( 'В точку!' );
-  //     break;
-  //   case 'update':
-  //     alert( 'Перебор' );
-  //     break;
-  //   default:
-  //     alert( "Нет таких значений" );
-  // }
-}
+//   //     } else {
+//   //       sliderConfig.firstSlidePosition += sliderConfig.slides;
+//   //     }
+//   //     break;
+//   //   case 'back':
+//   //     alert( 'В точку!' );
+//   //     break;
+//   //   case 'update':
+//   //     alert( 'Перебор' );
+//   //     break;
+//   //   default:
+//   //     alert( "Нет таких значений" );
+//   // }
+// }
 
-function checkForward () {
-  return sliderConfig.firstSlidePosition + sliderConfig.slides;
-}
+// function checkForward () {
+//   return sliderConfig.firstSlidePosition + sliderConfig.slides;
+// }
 
-function checkBack () {
-  return sliderConfig.firstSlidePosition - sliderConfig.slides;
-}
+// function checkBack () {
+//   return sliderConfig.firstSlidePosition - sliderConfig.slides;
+// }
 
-let slidesCount = (Math.floor(window.innerWidth / 420) < 4) ? Math.floor(window.innerWidth / 420) : 3;//   let result = условие ? значение1 : значение2;
+// let slidesCount = (Math.floor(window.innerWidth / 420) < 4) ? Math.floor(window.innerWidth / 420) : 3;//   let result = условие ? значение1 : значение2;
 
 const sliderConfig = {
-  slidesCount: slidesCount,
+  // slidesCount: slidesCount,
   slides: [
     {
       author: 'Наталья Зайцева',
@@ -223,29 +336,31 @@ const sliderConfig = {
   slidesWindow: []
 };
 
+
+
 //обработчики
 
 window.addEventListener('resize',(evt) => {
   updateSlider();
-  // if (window.innerWidth < 910 ) {
-  //   sliderConfig.slidesCount = 1;
-  //   // countSlides();
+  // // if (window.innerWidth < 910 ) {
+  // //   sliderConfig.slidesCount = 1;
+  // //   // countSlides();
+  // //   fillWindow(sliderConfig.firstSlidePosition);
+  // //   fillSlideList();
+
+  // // }
+  // // if (window.innerWidth >= 910 && window.innerWidth <= 1329) {
+  // //   sliderConfig.slidesCount = 2;
+  // //   // countSlides();
+  // //   fillWindow(sliderConfig.firstSlidePosition);
+  // //   fillSlideList();
+  // // }
+
+  // // if (window.innerWidth >=1330) {
+  //   //sliderConfig.slidesCount = 3;
+  //   countSlides();
   //   fillWindow(sliderConfig.firstSlidePosition);
   //   fillSlideList();
-
-  // }
-  // if (window.innerWidth >= 910 && window.innerWidth <= 1329) {
-  //   sliderConfig.slidesCount = 2;
-  //   // countSlides();
-  //   fillWindow(sliderConfig.firstSlidePosition);
-  //   fillSlideList();
-  // }
-
-  // if (window.innerWidth >=1330) {
-    //sliderConfig.slidesCount = 3;
-    countSlides();
-    fillWindow(sliderConfig.firstSlidePosition);
-    fillSlideList();
   //}
 });
 
@@ -260,6 +375,9 @@ leftArrowBtn.addEventListener('click', () => {
 //работа кода
 
 
-fillWindow(sliderConfig.firstSlidePosition);
+// fillWindow(sliderConfig.firstSlidePosition);
+countSlides();
+fillSliderWindow();
 
 fillStartSlideList();
+updateSlider();

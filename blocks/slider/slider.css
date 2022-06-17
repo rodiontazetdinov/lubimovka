@@ -3,17 +3,24 @@
   margin: 0 auto;
 }
 
-@media screen and (min-width: 450px) {
+/* @media screen and (min-width: 830px) {
   .slider {
-    padding-right: 25px;
-    padding-left: 25px;
+    justify-content: space-between;
+    width: calc(100% + 30px);
   }
 }
 
-@media screen and (min-width: 1370px) {
+@media screen and (min-width: 1260px) {
   .slider {
-    padding: 0;
+    width: calc(100% + 60px);
+  }
+}
+
+@media screen and (min-width: 1320px) {
+  .slider {
+    width: calc(100% + 60px);
   }
 }
 
 
+ */

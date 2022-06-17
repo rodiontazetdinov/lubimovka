@@ -5,9 +5,26 @@
   visibility: visible;
   position: relative;
   width: 100%;
+  /* min-width: 400px; */
   /* -webkit-transform: translate(300px);
 	-moz-transform: translate(300px);
 	-ms-transform: translate(300px);
 	-o-transform: translate(300px); */
 	/* transform: translate(420px); */
+  opacity: 1;
+  /* left: -400px; */
+  /* transform: translateY(420px) 1.5s ease-in 0s; */
 }
+
+@media screen and (min-width: 830px) {
+  .slider__item_is-visible {
+    max-width: 400px;
+  }
+}
+
+@media screen and (min-width: 1320px) {
+  .slider__item_is-visible {
+    max-width: 420px;
+  }
+}
+

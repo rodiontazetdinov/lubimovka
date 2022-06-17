@@ -3,12 +3,32 @@
   overflow: hidden;
   position: relative;
   bottom: 46px;
+  /* box-sizing:border-box; */
 }
 
 @media screen and (min-width: 768px) {
   .slider__content {
     position: static;
     bottom: auto;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .slider__content {
+    justify-content: space-between;
+    width: 830px;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  .slider__content {
+    width: 1260px;
+  }
+}
+
+@media screen and (min-width: 1321px) {
+  .slider__content {
+    width: 1320px;
   }
 }
 
