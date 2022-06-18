@@ -3,21 +3,9 @@
   padding: 72px 27px 100px;
   visibility: hidden;
   width: 100%;
-  /* display: none; */
   position: absolute;
   box-sizing: border-box;
-  /* -webkit-transition:all 1.5s ease-in 0s;
-	-moz-transition: all 1.5s ease-in 0s;
-	-o-transition: all 1.5s ease-in 0s; */
-	/* transition: position 1.5s ease-in 0s; */
-  /* margin-right: 15px;
-  margin-left: 15px; */
   opacity: 0;
-  /* left: -500px; */
-  /* transform: translate(-400px);
-  transition: transform 2000ms;
-  /* transition: left 3000ms; */
-  /* transition: transform 2000ms; */
 }
 
 @media screen and (min-width: 830px) {

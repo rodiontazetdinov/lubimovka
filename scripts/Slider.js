@@ -1,9 +1,11 @@
+//импортируем нужные переменные
 import {slide, leftArrowBtn, rightArrowBtn, sliderList} from './index.js';
 export class Slider {
+    //собираем слайдер
     constructor(sliderConfig) {
     this._sliderConfig = sliderConfig;
     }
-
+    //из темплейта собираем карточку слайдера
     _createSlide(author, text) {
       const element = slide.content.querySelector('.slider__item').cloneNode(true);
       element.querySelector('.slider__signature').textContent = author;
@@ -11,7 +13,7 @@ export class Slider {
 
       return element;
     }
-
+    //отображение начальных слайдов
     _fillStartSlideList() {
       this._sliderConfig.slides.forEach((item, idx) => {
         const element = this._createSlide(item.author,item.text);
@@ -21,7 +23,7 @@ export class Slider {
         sliderList.append(element);
       });
     }
-
+    //анимация прокрутки
     _translateX(active) {
       switch (this._sliderConfig.directionIs) {
         case 'right':
@@ -38,7 +40,7 @@ export class Slider {
           break;
       }
     }
-
+    //обратная анимация прокрутки
     _deTranslateX(item) {
       item.style.left = "";
       item.style.right = "";
@@ -59,7 +61,7 @@ export class Slider {
       this._fillSlideList();
       this._handleArrowsState();
     }
-
+    // проверка от какого слайда начинать рендерить карточки
     _setFirstSlidePosition (scenario) {
       switch (scenario) {
         case 'forward':
@@ -90,15 +92,15 @@ export class Slider {
           this._sliderConfig.firstSlidePosition = 0;
       }
     }
-
+    //шорткат для шага вперед
     _stepForward() {
       return this._sliderConfig.firstSlidePosition + this._sliderConfig.slidesCount;
     }
-
+    //шорткат для шага назад
     _stepBack() {
       return this._sliderConfig.firstSlidePosition - this._sliderConfig.slidesCount;
     }
-
+    //проверка на необходимость деактивации кнопки
     _handleArrowsState() {
       if (this._sliderConfig.slidesWindow.indexOf(0) > -1) {
         this._disableBtn(leftArrowBtn);
@@ -122,12 +124,7 @@ export class Slider {
       btn.removeAttribute('disabled');
     }
 
-    _updateSliderWindow () {
-      this._countSlides();
-      this._fillSliderWindow();
-      this._handleArrowsState();
-    }
-
+    //обновление в конфиге индексов отображаемых слайдов
     _fillSliderWindow () {
       this._sliderConfig.slidesWindow = [];
       for (let i = this._sliderConfig.firstSlidePosition; i < (this._sliderConfig.firstSlidePosition + this._sliderConfig.slidesCount); i++) {
@@ -135,12 +132,19 @@ export class Slider {
       }
     }
 
+    _updateSliderWindow () {
+      this._countSlides();
+      this._fillSliderWindow();
+      this._handleArrowsState();
+    }
+
+    //обновить кол-во слайдов при изменении разрешения
     _updateSlider () {
       this._handleArrowsState();
       this._updateSliderWindow();
       this._fillSlideList();
     }
-
+    // обновление в конфиге кол-ва слайдов
     _countSlides() {
       if (window.innerWidth < 830) {
         this._sliderConfig.slidesCount = 1;
@@ -150,7 +154,7 @@ export class Slider {
         this._sliderConfig.slidesCount = 2;
       }
     }
-
+    // убрать со слайдов классы видимости
     _deactivateSlides(sliderItems) {
       sliderItems.forEach((slide, idx) => {
         if (slide.classList.contains('slider__item_is-visible')) {
@@ -159,7 +163,7 @@ export class Slider {
         }
       });
     }
-
+    // добавить актуальным слайдам классы видимости
     _activateSlides(sliderItems) {
       sliderItems.forEach((slide, idx) => {
         if (this._sliderConfig.slidesWindow.indexOf(idx) > -1) {
@@ -168,13 +172,13 @@ export class Slider {
         }
       });
     }
-
+    //заполнить слайдер слайдами
     _fillSlideList() {
       const sliderItems = Array.from(sliderList.querySelectorAll('.slider__item'));
       this._deactivateSlides(sliderItems);
       this._activateSlides(sliderItems);
     }
-
+    //установить направление анимации
     _setDirection (directionIs) {
       this._sliderConfig.directionIs = directionIs;
     }
@@ -194,7 +198,7 @@ export class Slider {
         this._slidePrevious();
       });
     }
-
+    // запустить работу слайдера
     renderSlider() {
       this._setEventListeners();
       this._countSlides();
