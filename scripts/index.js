@@ -19,60 +19,6 @@ function createSlide(author, text) {
   return element;
 }
 
-// function fillSlideList() {
-//   const sliderItems = Array.from(sliderList.querySelectorAll('.slider__item'));
-//   deactivateSlides(sliderItems);
-//   activateSlides(sliderItems);
-//   console.log(testConfig());
-// }
-
-// function deactivateSlides(sliderItems) {
-//   sliderItems.forEach((slide, idx) => {
-//     if (slide.classList.contains('slider__item_is-visible')) {
-//       slide.classList.remove('slider__item_is-visible');
-//       console.log(`deactivated ${idx}`);
-//     }
-//   });
-// }
-
-// function activateSlides(sliderItems) {
-//   sliderItems.forEach((slide, idx) => {
-//     if (sliderConfig.slidesWindow.indexOf(idx) > -1) {
-//       slide.classList.add('slider__item_is-visible');
-//       console.log(`activated ${idx}`);
-//     }
-//   });
-// }
-
-// function handleBtnState () {
-//   const firstSlide = 0;
-//   const lastSlide = sliderConfig.lastSlidePosition;
-//   sliderConfig.slidesWindow.forEach((item) => {
-//     if (item == firstSlide) {
-//       disableBtn(leftArrowBtn);
-//       activateBtn(rightArrowBtn);
-//     } else if (item == lastSlide) {
-//       disableBtn(rightArrowBtn);
-//       activateBtn(leftArrowBtn);
-//     }
-//   });
-// }
-
-// function testConfig() {
-//   console.log(`
-//   ---------------------------
-//   окно
-//   ${sliderConfig.slidesWindow}
-//   количество слайдов
-//   ${sliderConfig.slidesCount}
-//   первый слайд
-//   ${sliderConfig.firstSlidePosition}
-//   ---------------------------
-//   `);
-// }
-
-
-
 function fillStartSlideList() {
   sliderConfig.slides.forEach((item, idx) => {
     const element = createSlide(item.author,item.text);
@@ -83,64 +29,40 @@ function fillStartSlideList() {
   });
 }
 
-// function fillWindow(firstSlidePosition) {
+function translateX(active) {
+  switch (sliderConfig.directionIs) {
+    case 'right':
+      active.style.left =  `${sliderList.offsetWidth}px`;
+      active.style.transform = `translateX(-${sliderList.offsetWidth}px)`;
+      active.style.transition = "transform 2s";
+      break;
+    case 'left':
+      active.style.right =  `${sliderList.offsetWidth}px`;
+      active.style.transform = `translateX(${sliderList.offsetWidth}px)`;
+      active.style.transition = "transform 2s";
+      break;
+  }
+}
 
-//   console.log(firstSlidePosition, 'первая позиция передали в fillWindow');
-//   //((sliderConfig.slidesWindow.indexOf(sliderConfig.lastSlidePosition) > -1) && ((sliderConfig.lastSlidePosition + 1) >= 0))
-
-//   // if (sliderConfig.slidesWindow.indexOf(sliderConfig.lastSlidePosition) > -1) {
-//   //   firstSlidePosition = (sliderConfig.lastSlidePosition + 1) - sliderConfig.slidesCount; //ЗАТЫК ВОТ ТУТ. Когда присутствует последняя карточка. Какое условие нужно поставить, чтобы ограничить срабатывание.
-//   //   console.log(firstSlidePosition, 'если последний слайд есть в окне, то первая позиция будет последняя минус кол-во слайдов');
-//  // } else
-//   if (firstSlidePosition - sliderConfig.slidesCount < 0) {
-//     firstSlidePosition = 0;
-//     console.log(firstSlidePosition, 'если последней позиции в окне нет, и первая позиция минус кол-во слайдов < 0, то первая позиция будет 0');
-//   }
-
-//   sliderConfig.slidesWindow = [];
-//   for (let i = firstSlidePosition; i < (firstSlidePosition + sliderConfig.slidesCount); i++) {
-//     console.log(firstSlidePosition, ' for позиция начала передачи в окно');
-//     sliderConfig.slidesWindow.push(i);
-//     console.log(i, 'for то что передается в окно');
-//   }
-
-//   handleBtnState();
-//   console.log('fillWindow');
-// }
-
-// function disableBtn(btn) {
-//   btn.classList.add('slider__button_inactive');
-//   btn.setAttribute('disabled', 'disabled');
-// }
-// function activateBtn(btn) {
-//   btn.classList.remove('slider__button_inactive');
-//   btn.removeAttribute('disabled');
-// }
-
-// function countSlides() {
-//   sliderConfig.slidesCount = (Math.floor(window.innerWidth / 420) < 4) ? Math.floor(window.innerWidth / 420) : 3;
-// }
-function sayTest() {
-  console.log(sliderConfig.firstSlidePosition, 'first');
-  console.log(sliderConfig.slidesWindow, 'window');
+function deTranslateX(item) {
+  item.style.left = "";
+  item.style.right = "";
+  item.style.transform = "";
+  item.style.transition = "";
 }
 
 function slideNext () {
-  sayTest();
   setFirstSlidePosition('forward');
   fillSliderWindow();
   fillSlideList();
   handleArrowsState();
-  sayTest();
 }
 
 function slidePrevious () {
-  sayTest();
   setFirstSlidePosition('back');
   fillSliderWindow();
   fillSlideList();
   handleArrowsState();
-  sayTest();
 }
 
 function setFirstSlidePosition (scenario) {
@@ -208,7 +130,6 @@ function activateBtn(btn) {
 
 function updateSliderWindow () {
   countSlides();
-  // setFirstSlidePosition('update');
   fillSliderWindow();
   handleArrowsState();
 }
@@ -225,14 +146,10 @@ function fillSliderWindow () {
 }
 
 function updateSlider () {
-  // console.log('я сработал (updateSlider');
-  sayTest();
   handleArrowsState();
   updateSliderWindow();
   fillSlideList();
-  sayTest();
 
-  // тут мы добавляем классы нужным слайдам из окошка
 }
 
 function countSlides() {
@@ -244,7 +161,7 @@ function countSlides() {
   } else {
     sliderConfig.slidesCount = 2;
   }
-  sliderConfig.slidesCount = (Math.floor(window.innerWidth / 420) < 4) ? Math.floor(window.innerWidth / 420) : 3;
+
 }
 
 
@@ -252,6 +169,7 @@ function deactivateSlides(sliderItems) {
   sliderItems.forEach((slide, idx) => {
     if (slide.classList.contains('slider__item_is-visible')) {
       slide.classList.remove('slider__item_is-visible');
+      deTranslateX(slide);
     }
   });
 }
@@ -260,6 +178,7 @@ function activateSlides(sliderItems) {
   sliderItems.forEach((slide, idx) => {
     if (sliderConfig.slidesWindow.indexOf(idx) > -1) {
       slide.classList.add('slider__item_is-visible');
+      translateX(slide);
     }
   });
 }
@@ -269,42 +188,8 @@ function fillSlideList() {
   deactivateSlides(sliderItems);
   activateSlides(sliderItems);
 }
-// function updateSlider() {
-//   setFirstSlidePosition('update');
-// }
-
-// function setFirstSlidePosition (scenario) {
-//   // switch (scenario) {
-//   //   case 'forward':
-//   //     if (checkForward()) {
-
-//   //     } else {
-//   //       sliderConfig.firstSlidePosition += sliderConfig.slides;
-//   //     }
-//   //     break;
-//   //   case 'back':
-//   //     alert( 'В точку!' );
-//   //     break;
-//   //   case 'update':
-//   //     alert( 'Перебор' );
-//   //     break;
-//   //   default:
-//   //     alert( "Нет таких значений" );
-//   // }
-// }
-
-// function checkForward () {
-//   return sliderConfig.firstSlidePosition + sliderConfig.slides;
-// }
-
-// function checkBack () {
-//   return sliderConfig.firstSlidePosition - sliderConfig.slides;
-// }
-
-// let slidesCount = (Math.floor(window.innerWidth / 420) < 4) ? Math.floor(window.innerWidth / 420) : 3;//   let result = условие ? значение1 : значение2;
 
 const sliderConfig = {
-  // slidesCount: slidesCount,
   slides: [
     {
       author: 'Наталья Зайцева',
@@ -337,45 +222,29 @@ const sliderConfig = {
 };
 
 
-
 //обработчики
 
 window.addEventListener('resize',(evt) => {
   updateSlider();
-  // // if (window.innerWidth < 910 ) {
-  // //   sliderConfig.slidesCount = 1;
-  // //   // countSlides();
-  // //   fillWindow(sliderConfig.firstSlidePosition);
-  // //   fillSlideList();
-
-  // // }
-  // // if (window.innerWidth >= 910 && window.innerWidth <= 1329) {
-  // //   sliderConfig.slidesCount = 2;
-  // //   // countSlides();
-  // //   fillWindow(sliderConfig.firstSlidePosition);
-  // //   fillSlideList();
-  // // }
-
-  // // if (window.innerWidth >=1330) {
-  //   //sliderConfig.slidesCount = 3;
-  //   countSlides();
-  //   fillWindow(sliderConfig.firstSlidePosition);
-  //   fillSlideList();
-  //}
 });
 
+function setDirection (directionIs) {
+  sliderConfig.directionIs = directionIs;
+}
+
 rightArrowBtn.addEventListener('click', () => {
+  setDirection('right');
   slideNext();
 });
 
 leftArrowBtn.addEventListener('click', () => {
+  setDirection('left');
   slidePrevious();
 });
 
+
 //работа кода
 
-
-// fillWindow(sliderConfig.firstSlidePosition);
 countSlides();
 fillSliderWindow();
 
