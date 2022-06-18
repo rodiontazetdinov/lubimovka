@@ -1,0 +1,21 @@
+.about-donations__card {
+  font-family: 'FormularLight';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 23px;
+  font-feature-settings: 'ss01' on;
+  color: #242424;
+}
+
+
+@media screen and (min-width: 869px) {
+  .about-donations__card {
+    font-family: 'Neue Machina';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    font-feature-settings: normal;
+    letter-spacing: -0.01em;
+  }
+}

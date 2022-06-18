@@ -1,0 +1,12 @@
+.content-donation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0;
+}
+
+@media screen and (min-width: 869px) {
+  .content-donation {
+    padding-top: 61px;
+  }
+}

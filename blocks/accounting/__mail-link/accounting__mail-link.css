@@ -1,0 +1,10 @@
+.accounting__mail-link {
+  color: inherit;
+}
+
+
+.accounting__mail-link:hover {
+  color: #fff;
+  background-color: #000;
+  text-decoration: none;
+}

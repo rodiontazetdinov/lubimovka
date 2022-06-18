@@ -1,0 +1,33 @@
+.transfer-donation__note {
+  position: relative;
+  font-family: 'FormularLight';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 23px;
+  font-feature-settings: 'ss01' on;
+  color: #242424;
+  margin-top: 61px;
+  margin-bottom: 0;
+  padding: 0 0 58px 28px;
+  max-width: 345px;
+}
+
+
+.transfer-donation__note::before {
+  position: absolute;
+  top: -27px;
+  left: 1px;
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-image: url(../../../img/asterisk.svg);
+}
+
+
+@media screen and (min-width: 869px) {
+  .transfer-donation__note {
+    margin-top: 122px;
+    margin-left: 32px;
+  }
+}

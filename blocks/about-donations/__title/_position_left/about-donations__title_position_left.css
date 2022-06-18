@@ -1,0 +1,10 @@
+.about-donations__title_position_left {
+  align-self: flex-start;
+}
+
+@media screen and (min-width: 1280px) {
+  .about-donations__title_position_left {
+    padding: 0 59px 5px 32px;
+    align-self: flex-end;
+  }
+}

@@ -1,6 +1,6 @@
 .page {
     width: 100%;
-    background-color: #ECEBE8;
+    background-color: var(--background);
     font-family: FormularLight, serif;
     color: var(--black);
 }
