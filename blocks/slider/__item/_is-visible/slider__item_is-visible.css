@@ -5,17 +5,7 @@
   visibility: visible;
   position: relative;
   width: 100%;
-  /* min-width: 400px; */
-  /* -webkit-transform: translate(300px);
-	-moz-transform: translate(300px);
-	-ms-transform: translate(300px);
-	-o-transform: translate(300px); */
-	/* transform: translate(420px); */
   opacity: 1;
-  /* left: -499px; */
-  /* transform: translateY(420px) 1.5s ease-in 0s; */
-  /* transform: translate(0px); */
-  /* transition: transform 2000ms; */
 }
 
 @media screen and (min-width: 830px) {

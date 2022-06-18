@@ -1,9 +1,7 @@
 .slider__content {
-  /* background: #fff; */
   overflow: hidden;
   position: relative;
   bottom: 46px;
-  /* box-sizing:border-box; */
 }
 
 @media screen and (min-width: 768px) {

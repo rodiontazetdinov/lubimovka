@@ -11,19 +11,5 @@
 @media screen and (min-width: 830px) {
   .slider__list {
     justify-content: space-between;
-    /* width: calc(100% + 30px); */
   }
 }
-
-/* @media screen and (min-width: 1260px) {
-  .slider__list {
-    width: calc(100% + 60px);
-  }
-}
-
-@media screen and (min-width: 1320px) {
-  .slider__list {
-    width: calc(100% + 60px);
-  }
-}
- */

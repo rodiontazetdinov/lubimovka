@@ -1,7 +1,6 @@
 .slider__header {
   display: grid;
   justify-content: space-between;
-  /* padding-bottom: 24px; */
   max-width: 768px;
   margin: 0 auto;
   grid-template-columns: minmax(127px, 341px) 170px;

@@ -2,25 +2,3 @@
   max-width: 1320px;
   margin: 0 auto;
 }
-
-/* @media screen and (min-width: 830px) {
-  .slider {
-    justify-content: space-between;
-    width: calc(100% + 30px);
-  }
-}
-
-@media screen and (min-width: 1260px) {
-  .slider {
-    width: calc(100% + 60px);
-  }
-}
-
-@media screen and (min-width: 1320px) {
-  .slider {
-    width: calc(100% + 60px);
-  }
-}
-
-
- */
