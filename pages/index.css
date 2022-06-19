@@ -67,7 +67,7 @@
 @import url(../blocks/video/__names/video__names.css);
 @import url(../blocks/video/__video/video__video.css);
 @import url(../blocks/video/__iframe/video__iframe.css);
-@import url(../blocks/btnPlay/btn-play.css);
+@import url(../blocks/btn-play/btn-play.css);
 
 @import url(../blocks/video/__description/video__description.css);
 @import url(../blocks/video/__text/video__text.css);
@@ -75,10 +75,10 @@
 @import url(../blocks/reading/__title/reading__title.css);
 @import url(../blocks/reading/__card/reading__card.css);
 
-@import url(../blocks/btnBig/btn-big.css);
-@import url(../blocks/btnBig/__icon/btn-big__icon.css);
-@import url(../blocks/btnBig/__icon/_type/btn-big__icon_type_watch.css);
-@import url(../blocks/btnBig/__icon/_type/btn-big__icon_type_download.css);
+@import url(../blocks/btn-big/btn-big.css);
+@import url(../blocks/btn-big/__icon/btn-big__icon.css);
+@import url(../blocks/btn-big/__icon/_type/btn-big__icon_type_watch.css);
+@import url(../blocks/btn-big/__icon/_type/btn-big__icon_type_download.css);
 
 @import url(../blocks/card/card.css);
 @import url(../blocks/card/__title/card__title.css);
