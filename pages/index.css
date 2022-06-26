@@ -86,6 +86,7 @@
 @import url(../blocks/card/__surname/card__surname.css);
 @import url(../blocks/card/__city/card__city.css);
 @import url(../blocks/card/__year/card__year.css);
+
 /* feedback */
 @import url(../blocks/feedback/feedback.css);
 @import url(../blocks/feedback/__image/feedback__image.css);
