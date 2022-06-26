@@ -87,6 +87,14 @@
 @import url(../blocks/card/__city/card__city.css);
 @import url(../blocks/card/__year/card__year.css);
 
+/* feedback */
+@import url(../blocks/feedback/feedback.css);
+@import url(../blocks/feedback/__image/feedback__image.css);
+@import url(../blocks/feedback/__tell/feedback__tell.css);
+@import url(../blocks/feedback/__report/feedback__report.css);
+@import url(../blocks/feedback/__social/feedback__social.css);
+@import url(../blocks/feedback/__link/feedback__link.css);
+@import url(../blocks/feedback/__button/feedback__button.css);
 /* footer */
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__logo/footer__logo.css);

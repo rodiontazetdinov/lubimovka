@@ -1,0 +1,14 @@
+.feedback__image {
+  background-image: url("../../../img/over-footer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 252.22px;
+  overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .feedback__image {
+    min-height: 404px;
+    width: 100%;
+  }
+}

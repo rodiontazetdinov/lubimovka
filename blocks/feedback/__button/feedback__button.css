@@ -1,0 +1,9 @@
+.feedback__button {
+  height: 13px;
+  width: 21px;
+  margin-right: 4px;
+  background-image: url("../../../img/arrow-right-black.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+}

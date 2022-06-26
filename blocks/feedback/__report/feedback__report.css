@@ -1,0 +1,14 @@
+.feedback__report {
+  font-family: "Neue Machina";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: -0.01em;
+  color: var(--black);
+}
+@media screen and (min-width: 768px)  {
+  .feedback__report {
+    position: relative;
+    max-width: 500px;
+  }
+}
