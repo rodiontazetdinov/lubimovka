@@ -1,0 +1,11 @@
+.feedback__tell {
+  display: flex;
+  flex-direction: column;
+  padding: 24.78px 26px 0;
+}
+@media screen and (min-width: 768px)  {
+  .feedback__tell {
+    align-items: center;
+    padding: 57px 0 0;
+  }
+}
