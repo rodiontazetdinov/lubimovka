@@ -87,6 +87,24 @@
 @import url(../blocks/card/__city/card__city.css);
 @import url(../blocks/card/__year/card__year.css);
 
+/* feedback */
+@import url(../blocks/feedback/feedback.css);
+@import url(../blocks/slider/slider.css);
+@import url(../blocks/slider/__header/slider__header.css);
+@import url(../blocks/slider/__title/slider__title.css);
+@import url(../blocks/slider/__buttons/slider__buttons.css);
+@import url(../blocks/slider/__button/slider__button.css);
+@import url(../blocks/slider/__button/_inactive/slider__button_inactive.css);
+@import url(../blocks/slider/__content/slider__content.css);
+@import url(../blocks/slider/__page-dots/slider__page-dots.css);
+@import url(../blocks/slider/__page-dot/slider__page-dot.css);
+@import url(../blocks/slider/__page-dot/_active/slider__page-dot_active.css);
+@import url(../blocks/slider/__list/slider__list.css);
+@import url(../blocks/slider/__item/slider__item.css);
+@import url(../blocks/slider/__item/_is-visible/slider__item_is-visible.css);
+@import url(../blocks/slider/__text/slider__text.css);
+@import url(../blocks/slider/__signature/slider__signature.css);
+
 /* footer */
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__logo/footer__logo.css);

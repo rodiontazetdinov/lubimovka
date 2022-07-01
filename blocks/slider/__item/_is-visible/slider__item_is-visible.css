@@ -1,0 +1,22 @@
+.slider__item_is-visible {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  visibility: visible;
+  position: relative;
+  width: 100%;
+  opacity: 1;
+}
+
+@media screen and (min-width: 830px) {
+  .slider__item_is-visible {
+    max-width: 400px;
+  }
+}
+
+@media screen and (min-width: 1320px) {
+  .slider__item_is-visible {
+    max-width: 420px;
+  }
+}
+

@@ -1,0 +1,15 @@
+.slider__list {
+  list-style-type: none;
+  padding: 0 0 100px;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: center;
+}
+
+@media screen and (min-width: 830px) {
+  .slider__list {
+    justify-content: space-between;
+  }
+}

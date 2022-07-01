@@ -194,6 +194,33 @@
         </div>
       </div>
     </section>
+
+    <section class="feedback">
+      <div class="slider">
+
+        <div class="slider__header">
+          <h2 class="slider__title">Отзывы зрителей</h2>
+          <div class="slider__buttons">
+            <button id="left-arrow" class="slider__button slider__button_inactive" type="button"  disabled><img src="./img/slider-arrow-left.png" alt="Кнопка влево"></button>
+            <button id="right-arrow" class="slider__button" type="button"><img src="./img/slider-arrow-right.png" alt="Кнопка вправо"></button>
+          </div>
+          <ul class="slider__page-dots">
+            <li><button type="button" class="slider__page-dot slider__page-dot_active"></button></li>
+            <li><button type="button" class="slider__page-dot"></button></li>
+            <li><button type="button" class="slider__page-dot"></button></li>
+            <li><button type="button" class="slider__page-dot"></button></li>
+          </ul>
+        </div>
+
+        <div class="slider__content">
+
+          <ul class="slider__list">
+
+          </ul>
+        </div>
+
+      </div>
+    </section>
   </main>
 
 <!-- footer -->
@@ -278,5 +305,14 @@
         </div>
       </div>
     </footer>
+
+    <template id="slide">
+      <li class="slider__item">
+        <p class="slider__text"></p>
+        <p class="slider__signature"></p>
+      </li>
+    </template>
+
+    <script type="module" src="./scripts/index.js"></script>
 </body>
 </html>
