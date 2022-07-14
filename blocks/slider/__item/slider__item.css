@@ -1,0 +1,23 @@
+.slider__item {
+  background: var(--white);
+  padding: 72px 27px 100px;
+  visibility: hidden;
+  width: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  opacity: 0;
+}
+
+@media screen and (min-width: 830px) {
+  .slider__item {
+    padding-top: 33px;
+    padding-bottom: 24px;
+    max-width: 400px;
+  }
+}
+
+@media screen and (min-width: 1320px) {
+  .slider__item {
+    max-width: 420px;
+  }
+}

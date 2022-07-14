@@ -1,0 +1,23 @@
+.slider__title {
+  font-family: 'Neue Machina';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: -0.01em;
+  color: var(--black);
+  margin: 0;
+  padding: 0;
+  padding-left: 24px;
+  position: relative;
+  bottom: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .slider__title {
+    order: 1;
+    font-size: 40px;
+  }
+}
+
+
