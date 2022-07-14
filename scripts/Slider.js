@@ -1,10 +1,33 @@
 //импортируем нужные переменные
-import {slide, leftArrowBtn, rightArrowBtn, sliderList} from './index.js';
+import {slide, leftArrowBtn, rightArrowBtn, sliderList, dotList, dot} from './index.js';
 export class Slider {
     //собираем слайдер
     constructor(sliderConfig) {
     this._sliderConfig = sliderConfig;
     }
+
+    _createDot() {
+      const element = dot.content.querySelector('.slider__page-dot').cloneNode(true);
+
+      return element;
+    }
+
+    _fillDotList() {
+      let dotCount = this._sliderConfig.slides.length / this._sliderConfig.slidesWindow.length;
+      console.log(dotCount);
+      dotList.innerHTML = "";
+      for (let i = 0; i < dotCount; i++) {
+        const dot = this._createDot();
+        if (i === this._sliderConfig.dotPosition) {
+          dot.classList.add('slider__page-dot_active');
+        }
+
+        dotList.append(dot);
+      }
+      console.log(this._sliderConfig.slidesWindow);
+    }
+
+
     //из темплейта собираем карточку слайдера
     _createSlide(author, text) {
       const element = slide.content.querySelector('.slider__item').cloneNode(true);
@@ -53,6 +76,9 @@ export class Slider {
       this._fillSliderWindow();
       this._fillSlideList();
       this._handleArrowsState();
+      this._sliderConfig.dotPosition += 1;
+      this._fillDotList();
+
     }
 
     _slidePrevious () {
@@ -60,6 +86,8 @@ export class Slider {
       this._fillSliderWindow();
       this._fillSlideList();
       this._handleArrowsState();
+      this._sliderConfig.dotPosition -= 1;
+      this._fillDotList();
     }
     // проверка от какого слайда начинать рендерить карточки
     _setFirstSlidePosition (scenario) {
@@ -143,6 +171,7 @@ export class Slider {
       this._handleArrowsState();
       this._updateSliderWindow();
       this._fillSlideList();
+      this._fillDotList();
     }
     // обновление в конфиге кол-ва слайдов
     _countSlides() {

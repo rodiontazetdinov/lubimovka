@@ -7,6 +7,9 @@ export const leftArrowBtn = document.querySelector('#left-arrow');
 export const rightArrowBtn = document.querySelector('#right-arrow');
 export const sliderList = document.querySelector('.slider__list');
 
+export const dotList = document.querySelector('.slider__page-dots');
+export const dot = document.querySelector('#dot');
+
 export const slide = document.querySelector('#slide');
 
 const slider = new Slider(sliderConfig);

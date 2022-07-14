@@ -4,8 +4,6 @@
   list-style-type: none;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  width: 74px;
   height: 8px;
   padding-left: 29px;
   padding-top: 64px;

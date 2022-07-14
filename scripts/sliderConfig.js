@@ -27,5 +27,6 @@ export const sliderConfig = {
   ],
   firstSlidePosition: 0,
   lastSlidePosition: 5,
-  slidesWindow: []
+  slidesWindow: [],
+  dotPosition: 0
 };
