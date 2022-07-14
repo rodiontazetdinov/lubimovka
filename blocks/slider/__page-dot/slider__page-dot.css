@@ -3,7 +3,7 @@
   height: 6px;
   margin: 0;
   padding: 0;
-  border: solid 1px #242424;
+  border: solid 1px var(--black);
   border-radius: 50%;
   background-color: transparent;
   box-sizing:border-box;

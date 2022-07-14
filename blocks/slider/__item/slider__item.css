@@ -1,5 +1,5 @@
 .slider__item {
-  background: #fff;
+  background: var(--white);
   padding: 72px 27px 100px;
   visibility: hidden;
   width: 100%;
