@@ -87,7 +87,7 @@
 @import url(../blocks/card/__city/card__city.css);
 @import url(../blocks/card/__year/card__year.css);
 
-/* feedback */
+/* slider */
 @import url(../blocks/feedback/feedback.css);
 @import url(../blocks/slider/slider.css);
 @import url(../blocks/slider/__header/slider__header.css);
