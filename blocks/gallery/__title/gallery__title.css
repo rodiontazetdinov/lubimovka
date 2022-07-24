@@ -1,0 +1,18 @@
+.gallery__title {
+    max-width: 369px;
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+@media all and (min-width:600px) {
+  .gallery__title {
+    max-width: 560px;
+    margin: 144px auto 40px 25%;
+    font-family: 'Neue Machina';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.01em;
+  }
+}
