@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0 auto;
   display: flex;
+  justify-content: center;
   gap: 1px;
   flex-wrap: wrap;
   object-fit: contain;
