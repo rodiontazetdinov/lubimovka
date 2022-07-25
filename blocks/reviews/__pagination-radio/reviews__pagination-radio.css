@@ -1,0 +1,7 @@
+.reviews__pagination-radio {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
